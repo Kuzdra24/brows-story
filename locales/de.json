@@ -1,3 +1,9 @@
 {
-    "hello": "HALLO"
-}
+    "hello": "Hallo!",
+    "menu": {
+      "about": "Über mich",
+      "services": "Angebot",
+      "prices": "Preise"
+    }
+  }
+  

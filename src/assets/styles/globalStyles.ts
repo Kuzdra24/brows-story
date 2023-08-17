@@ -1,12 +1,20 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   body {
-    font-family: Arial, sans-serif;
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #FCFAF6;
+    text-decoration: none;
+    a{
+      color: inherit; 
+    }
+  }
+  *{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
   }
 `;
 

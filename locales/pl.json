@@ -1,3 +1,16 @@
 {
-    "hello": "czesc!"
+  "hello": "czesc!",
+  "menu": {
+    "about": "o mnie",
+    "services": "usługi",
+    "servicesOptions": {
+      "brows": "brwi",
+      "lipPermanentMakeup": "makijaż permanentny ust",
+      "browPermanentMakeup": "makijaż permanentny brwi",
+      "browLamination": "laminacja brwi"
+    },
+    "prices": "cennik"
+  },
+  "subtitle": "Być pięknym to być sobą. <br /> Nie musisz być akceptowany przez innych. <br/> Musisz zaakaceptować siebie",
+  "buttonAction": "ZOBACZ USŁUGI"
 }
