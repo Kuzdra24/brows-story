@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
         <img src={miniLogo} alt="Logo" height="50" />
       </Link>
       <NavItemsWrapper>
-        <NavItem to={"/"}>{t("menu.about")}</NavItem>
+        <NavItem to={"/#about"}>{t("menu.about")}</NavItem>
         <NavItem to={"/"} >{t("menu.services")}</NavItem>
         <NavItem to={"/priceList"}>{t("menu.prices")}</NavItem>
         <LanguageSwitcher />

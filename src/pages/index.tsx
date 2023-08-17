@@ -9,7 +9,7 @@ const IndexPage = () => {
   return (
     <>
       <HeroSection/>
-      <AboutSecction />
+      <AboutSecction/>
       <p>JDDDD</p>
     </>
   );

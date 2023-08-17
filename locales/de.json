@@ -1,9 +1,16 @@
 {
-    "hello": "Hallo!",
-    "menu": {
-      "about": "Über mich",
-      "services": "Angebot",
-      "prices": "Preise"
-    }
-  }
-  
+  "hello": "Hallo!",
+  "menu": {
+    "about": "Über mich",
+    "services": "Dienstleistungen",
+    "servicesOptions": {
+      "brows": "Augenbrauen",
+      "lipPermanentMakeup": "Permanentes Lippen-Make-up",
+      "browPermanentMakeup": "Permanentes Augenbrauen-Make-up",
+      "browLamination": "Augenbrauen-Laminierung"
+    },
+    "prices": "Preise"
+  },
+  "subtitle": "Schön zu sein bedeutet, man selbst zu sein. <br /> Du musst nicht von anderen akzeptiert werden. <br/> Du musst dich selbst akzeptieren.",
+  "buttonAction": "DIENSTLEISTUNGEN ANSEHEN"
+}

@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Trans } from "react-i18next";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { Button } from "../Button";
+import { Button } from "../UI/Button";
 
 const StyledTitle = styled.h1`
   font-size: 86px;
@@ -45,7 +45,7 @@ const Wrapper = styled.div`
     border-color: ${({ theme }) => theme.colors.dark};
   }
   p {
-    max-width: 330px;
+    /* max-width: 330px; */
     width: 100%;
     font-size: ${({ theme }) => theme.fontSizes.xs};
     text-align: center;

@@ -9,7 +9,7 @@ export const Button = styled.button`
     cursor: pointer;
     font-size: ${({theme})=> theme.fontSizes.xs};
     letter-spacing: 2px;
-    transition: ease-in-out .4s;
+    transition: ease-in-out .3s;
     margin: 15px;
     &:after{
         content: ''
