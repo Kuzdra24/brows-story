@@ -18,9 +18,9 @@ const SectionWrapper = styled.section`
   max-width: 1200px;
   width: 100%;
   height: 80vh;
-  &:before{
-    content: '';
-    background-color: ${({theme})=> theme.colors.secondary}60;
+  &:before {
+    content: "";
+    background-color: ${({ theme }) => theme.colors.secondary}60;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -28,7 +28,6 @@ const SectionWrapper = styled.section`
     left: -69%;
     z-index: -1;
     transform: rotate(45deg);
-    
   }
 `;
 
@@ -51,6 +50,13 @@ const Wrapper = styled.div`
     text-align: center;
     line-height: 2;
   }
+`;
+
+const StyledImage = styled(GatsbyImage)`
+  max-width: 400px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: ${({ theme }) => theme.boxShadow};
 `;
 
 const HeroSection: React.FC = () => {
@@ -86,7 +92,10 @@ const HeroSection: React.FC = () => {
         </p>
         <Button>{t("buttonAction")}</Button>
       </Wrapper>
-      <GatsbyImage style={{ maxWidth: '400px', width: '100%' }} image={imageData} alt="Opis obrazka" />
+      <StyledImage
+        image={imageData}
+        alt="Opis obrazka"
+      />
     </SectionWrapper>
   );
 };

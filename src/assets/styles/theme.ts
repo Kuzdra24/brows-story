@@ -19,6 +19,8 @@ const theme = {
     m: "768px",
     l: "992px",
   },
+  boxShadow: '-5px 11px 22px -18px rgba(66, 68, 90, 1)',
+  textShadow: 'text-shadow: -2px 2px 5px rgba(66, 68, 90, .6)'
 };
 
 export default theme;

@@ -25,24 +25,17 @@ const NavItem = styled(Link)`
   cursor: pointer;
 `;
 
-const Select = styled.select`
-  background-color: transparent;
-  border: none;
-  font-size: 15px;
-  cursor: pointer;
-`;
-
 const Navbar: React.FC = () => {
   const { t } = useTranslation();
 
   return (
     <NavbarWrapper>
       <Link to="/">
-        <img src={miniLogo} alt="Logo" height="50" />
+        <img src={miniLogo} alt="Logo" height="70" />
       </Link>
       <NavItemsWrapper>
         <NavItem to={"/#about"}>{t("menu.about")}</NavItem>
-        <NavItem to={"/"} >{t("menu.services")}</NavItem>
+        <NavItem to={"/services"} >{t("menu.services")}</NavItem>
         <NavItem to={"/priceList"}>{t("menu.prices")}</NavItem>
         <LanguageSwitcher />
       </NavItemsWrapper>

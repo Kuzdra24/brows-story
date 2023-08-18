@@ -1,34 +1,21 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const ImageWrapper = styled.div`
-    flex: 1;
-    margin: 20;
-    display: flex;
-    justify-content: center;
-`
+  flex: 1;
+  margin: 20;
+  display: flex;
+  justify-content: center;
+`;
 
-const profileAnimation = keyframes`
-    0%{
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-
-    50%{
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-    }
-
-    100%{
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-`
 
 const StyledImage = styled(GatsbyImage)`
   width: 350px;
   height: 350px;
-  border: 6px solid ${({theme}) => theme.colors.primary}80;
-  animation: ${profileAnimation} 8s ease-in-out infinite;
+  border-radius: 5px;
+  box-shadow: ${({ theme }) => theme.boxShadow};
 `;
 
 interface ImageQueryData {
@@ -42,7 +29,7 @@ interface ImageQueryData {
 export const AboutImage: React.FC = () => {
   const data = useStaticQuery<ImageQueryData>(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "homePage/aboutImage.jpeg" }) {
+      placeholderImage: file(relativePath: { eq: "homePage/aboutImage.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
