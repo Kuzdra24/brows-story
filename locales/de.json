@@ -11,6 +11,8 @@
     },
     "prices": "Preise"
   },
-  "subtitle": "Schön zu sein bedeutet, man selbst zu sein. <br /> Du musst nicht von anderen akzeptiert werden. <br/> Du musst dich selbst akzeptieren.",
-  "buttonAction": "DIENSTLEISTUNGEN ANSEHEN"
+  "subtitle": "Schön sein bedeutet, man selbst zu sein. <br /> Du musst nicht von anderen akzeptiert werden. <br/> Du musst dich selbst akzeptieren.",
+  "buttonAction": "DIENSTLEISTUNGEN ANSEHEN",
+  "aboutDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor orci in tortor fermentum, vel tempor risus lacinia. Sed dictum ex at ex convallis, a luctus dolor tristique. Nulla ut velit rutrum, volutpat purus non, tristique odio. Integer ut nisl in mi dapibus volutpat. In pulvinar magna non ligula consequat, sed finibus ex lacinia. Fusce a diam nec odio congue dictum. Morbi eget ullamcorper mi. Duis sodales mauris nec.",
+  "liftingDescription": "Wimpernlifting ist eine Behandlung zum Anheben und Kräuseln der Wimpern, die einen <1>{{gold}}</1> <br /> Natürlicher Wimpern-Look befriedigt nicht immer Frauen, die auf einen intensiven, markanten Blick Wert legen. Wimpern sind oft dünn, hell und wachsen gerade, anstatt dicht und schwungvoll gekräuselt zu sein. Für Frauen, die einen natürlichen, aber sichtbaren Effekt wünschen, wird die Behandlung von Wimpernlifting / -laminierung empfohlen."
 }

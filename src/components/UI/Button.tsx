@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-    width: 340px;
+    width: 100%;
+    max-width: 340px;
     background-color: transparent;
     border: 1px solid ${({theme}) => theme.colors.dark};
     border-radius: 30px;

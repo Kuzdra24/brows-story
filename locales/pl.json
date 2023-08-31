@@ -1,5 +1,4 @@
 {
-  "hello": "czesc!",
   "menu": {
     "about": "o mnie",
     "services": "usługi",
@@ -13,5 +12,17 @@
   },
   "subtitle": "Być pięknym to być sobą. <br /> Nie musisz być akceptowany przez innych. <br/> Musisz zaakaceptować siebie",
   "buttonAction": "ZOBACZ USŁUGI",
-  "aboutDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor orci in tortor fermentum, vel tempor risus lacinia. Sed dictum ex at ex convallis, a luctus dolor tristique. Nulla ut velit rutrum, volutpat purus non, tristique odio. Integer ut nisl in mi dapibus volutpat. In pulvinar magna non ligula consequat, sed finibus ex lacinia. Fusce a diam nec odio congue dictum. Morbi eget ullamcorper mi. Duis sodales mauris nec Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor orci in tortor fermentum, vel tempor risus lacinia. Sed dictum ex at ex convallis, a luctus dolor tristique. Nulla ut velit rutrum."
+  "aboutDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor orci in tortor fermentum, vel tempor risus lacinia. Sed dictum ex at ex convallis, a luctus dolor tristique. Nulla ut velit rutrum, volutpat purus non, tristique odio. Integer ut nisl in mi dapibus volutpat. In pulvinar magna non ligula consequat, sed finibus ex lacinia. Fusce a diam nec odio congue dictum. Morbi eget ullamcorper mi. Duis sodales mauris nec Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor orci in tortor fermentum, vel tempor risus lacinia. Sed dictum ex at ex convallis, a luctus dolor tristique. Nulla ut velit rutrum.",
+  "liftingDescription": {
+    "first": "Lifting rzęs to zabieg podniesienia i podkręcenia rzęs, który daje<br /> Naturalny wygląd rzęs nie zawsze zadowala kobiety, którym zależy na intensywnym, wyrazistym spojrzeniu. Rzęsy często są rzadkie, jasne i rosną w lini prostej zamiast być gęste i zalotnie podkręcone. Dla kobiet, którym zależy na naturalnym, ale widocznym efekcie poleca się zabieg liftingu / laminaccji rzęs."
+  },
+  "brows": {
+    "whatIsItTitle": "Co to jest <br/> Makijaż permanentny brwi",
+    "whatIsItDescription": ["Kształt brwi to jeden z najbardziej wyrazistych elementów twarzy. Ich odpowiednia stylizacja może subtelnie podkreślić wygląd twarzy oraz zatuszować naturalną asymetrię.",
+      "MAKIJAŻ PRMAMENTNY BRWI - to specjalistyczny zabieg kosmetyczny, który pozwala uzyskać naturalne efekty poprawy kształtu, zagęszczenia i wyraźniejszego zarysowania brwi. Pigment wprowadzany jest na odpowiednią głębokość skury jednorazową igłą.",
+      "W odróżnieniu od starszych metod makijażu permamentnego, które oferowały trwałość na całe życie, ale często prowadziły do niekorzystnych odbarwień i braku możliwości zmiany kształtu, nowoczesny makijaż wykonywany w Brows Story, ma na celu uzyskanie jak najbardziej naturalnego efektu by podkreślić urodę klientki, odkryciu jej piękna i pewności siebie każdego dnia."
+    ],
+    "howLongTitle": "Jak długo utrzybuje się efekt zabiegu?",
+    "forWhoTitle": "Dla kogo jest makijaż permanentny"
+  }
 }

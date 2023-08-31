@@ -91,7 +91,7 @@ export const Contact: React.FC = () => {
             wizytę.
           </p>
           <p>
-            Wspólnie ustalimy dogodny termin oraz odpowiedziem na wszystkie
+            Wspólnie ustalimy dogodny termin oraz odpowiemy na wszystkie
             pytania.
           </p>
         </Description>
