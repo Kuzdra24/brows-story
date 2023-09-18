@@ -10,12 +10,12 @@ const Wrapper = styled.section`
     margin: 80px 0;
     &:after{
         content: '';
-        
     }
 `
 const ContentWrapper = styled.div`
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin: 50px 0; 
     p{
         flex: 1;

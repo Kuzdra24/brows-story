@@ -5,6 +5,8 @@ import { Trans } from "react-i18next";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { Button } from "../UI/Button";
+import heroImgSrc from '../../assets/images/homePage/heroImg.jpeg'
+import useWidth from "../../hooks/useWidth";
 
 const StyledTitle = styled.h1`
   font-size: 86px;
@@ -59,9 +61,29 @@ const StyledImage = styled(GatsbyImage)`
   box-shadow: ${({ theme }) => theme.boxShadow};
 `;
 
-const HeroSection: React.FC = () => {
-  const { t } = useTranslation();
+const MobileBackground = styled.div<{imgSrc: string}>`
+  background: #ffffff url(${({imgSrc}) => imgSrc}) no-repeat center;
+  background-size: cover;
+  margin: 15px;
+  border-radius: 5px;
+  z-index: -1;
+  padding: 10px;
+  &:after{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0;
+    background-color: #ffffff60;   
+    z-index: -1;
+  }
+`
 
+const HeroSection: React.FC = () => {
+
+  const { t } = useTranslation();
+  const width = useWidth();
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "homePage/heroImg.jpeg" }) {
@@ -80,6 +102,7 @@ const HeroSection: React.FC = () => {
   }
 
   return (
+    width > 574 ?
     <SectionWrapper>
       <Wrapper>
         <StyledTitle>
@@ -96,7 +119,20 @@ const HeroSection: React.FC = () => {
         image={imageData}
         alt="Opis obrazka"
       />
-    </SectionWrapper>
+    </SectionWrapper>:
+    <MobileBackground imgSrc={heroImgSrc}>
+     <Wrapper>
+        <StyledTitle>
+          Brows Story <br />
+          Anna Naściuk
+        </StyledTitle>
+        <hr />
+        <p>
+          <Trans i18nKey="subtitle" />
+        </p>
+        <Button>{t("buttonAction")}</Button>
+      </Wrapper>
+    </MobileBackground>
   );
 };
 

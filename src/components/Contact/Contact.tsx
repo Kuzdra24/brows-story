@@ -16,11 +16,12 @@ const ContentWrapper = styled.div`
   margin: 50px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 `;
 
 const Description = styled.div`
   width: 400px;
-  margin: 0 80px;
+  /* margin: 0 80px; */
   padding: 0 50px;
   border-left: 2px solid ${({ theme }) => theme.colors.primary};
 `;
