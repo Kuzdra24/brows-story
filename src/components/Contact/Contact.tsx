@@ -21,9 +21,8 @@ const ContentWrapper = styled.div`
   flex-wrap: wrap;
 `;
 
-const Description = styled.div<{isMobile?: boolean}>`
+const Description = styled.div`
   max-width: 400px;
-  /* margin: 0 80px; */
   padding: 0 50px;
 `;
 
@@ -137,7 +136,7 @@ export const Contact: React.FC = () => {
           <img src={WhatsappIcon} alt="whatsapp icon" width={40} />
         </div>
       </MobileSocial>
-      <Description isMobile={true}>
+      <Description>
         <p>{t("contact.0")}</p>
         <p>{t("contact.1")}</p>
         <p>{t("contact.2")}</p>

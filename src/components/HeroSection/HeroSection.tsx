@@ -1,4 +1,4 @@
-import React from "react";
+import React, { HTMLProps } from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { Trans } from "react-i18next";
@@ -60,8 +60,13 @@ const StyledImage = styled(GatsbyImage)`
   border-radius: 5px;
   box-shadow: ${({ theme }) => theme.boxShadow};
 `;
+type MobileBackgroundProps = HTMLProps<HTMLDivElement> & {
+  imgSrc: string;
+};
 
-const MobileBackground = styled.div<{imgSrc: string}>`
+const MobileBackground = styled(({ imgSrc, ...props }: MobileBackgroundProps) => (
+  <div {...props} />
+))`
   background: #ffffff url(${({imgSrc}) => imgSrc}) no-repeat center;
   background-size: cover;
   position: relative;

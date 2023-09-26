@@ -10,7 +10,7 @@ const LanguageSwitcherWrapper = styled.div`
   margin-left: 15px;
 `;
 
-const LanguageButton = styled.button<{ active: boolean }>`
+const LanguageButton = styled.button`
   background-color: transparent;
   padding: 0;
   color: white;
@@ -33,7 +33,6 @@ const LanguageSwitcher: React.FC = () => {
       {languages.map((language) => (
         <LanguageButton
           key={language}
-          active={language === i18n.language}
           onClick={() => handleLanguageChange(language)}
         >
           {language === "pl" ? (
