@@ -15,11 +15,11 @@ const StyledTitle = styled.h1`
 `;
 const SectionWrapper = styled.section`
   display: flex;
-  padding: 30px;
+  /* padding: 30px; */
   justify-content: center;
   max-width: 1200px;
   width: 100%;
-  height: 80vh;
+  /* height: 80vh; */
   &:before {
     content: "";
     background-color: ${({ theme }) => theme.colors.secondary}60;
@@ -64,18 +64,18 @@ const StyledImage = styled(GatsbyImage)`
 const MobileBackground = styled.div<{imgSrc: string}>`
   background: #ffffff url(${({imgSrc}) => imgSrc}) no-repeat center;
   background-size: cover;
-  margin: 15px;
+  position: relative;
   border-radius: 5px;
   z-index: -1;
   padding: 10px;
   &:after{
     content:'';
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
-    right: 0;
     left: 0;
-    bottom:0;
-    background-color: #ffffff60;   
+    background-color: #ffffff60;
     z-index: -1;
   }
 `
@@ -102,7 +102,7 @@ const HeroSection: React.FC = () => {
   }
 
   return (
-    width > 574 ?
+    width > 768 ?
     <SectionWrapper>
       <Wrapper>
         <StyledTitle>

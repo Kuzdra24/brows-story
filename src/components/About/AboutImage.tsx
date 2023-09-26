@@ -16,6 +16,10 @@ const StyledImage = styled(GatsbyImage)`
   height: 350px;
   border-radius: 5px;
   box-shadow: ${({ theme }) => theme.boxShadow};
+  @media (max-width: 576px) {
+    width: 300px;
+    height: 300px;
+  }
 `;
 
 interface ImageQueryData {

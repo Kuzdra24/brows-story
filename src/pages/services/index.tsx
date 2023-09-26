@@ -17,6 +17,7 @@ const Wrapper = styled.section`
   max-width: 1200px;
   justify-content: space-around;
   margin-bottom: 100px;
+  flex-wrap: wrap;
   &:before {
     content: "";
     position: absolute;
@@ -36,6 +37,9 @@ const SectionWrapper = styled.section`
   justify-content: center;
   align-items: center;
   margin: 60px 0;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `;
 
 interface ImgPropTypes {
@@ -50,7 +54,8 @@ const Description = styled.div<ImgPropTypes>`
     font-family: Cinzel;
     font-size: 32px;
     position: relative;
-    width: 480px;
+    max-width: 480px;
+    width: 100%;
     &:after {
       content: "";
       background-image: url(${({ imgSrc }) => imgSrc});
@@ -90,16 +95,12 @@ const IndexPage: React.FC = () => {
       </Wrapper>
       <SectionWrapper>
         <Description imgSrc={qm}>
-          <h2>Co to jest lifting rzęs</h2>
+          <h2>{t("services.lifting.title")}</h2>
           <p>
-            Lifting rzęs to zabieg podniesienia i podkręcenia rzęs, który daje{" "}
-            <mark> naturalny trwały efekt. </mark>
+            {t("services.lifting.description.0")}
+            <mark> {t("services.lifting.description.1")} </mark>
             <br />
-            Naturalny wygląd rzęs nie zawsze zadowala kobiety, którym zależy na
-            intensywnym, wyrazistym spojrzeniu. Rzęsy często są rzadkie, jasne i
-            rosną w lini prostej zamiast być gęste i zalotnie podkręcone. Dla
-            kobiet, którym zależy na naturalnym, ale widocznym efekcie poleca
-            się zabieg liftingu / laminaccji rzęs.
+            {t("services.lifting.description.2")}
           </p>
         </Description>
         <ServiceImage imgSource={lifting} alt="lifting" />
@@ -108,34 +109,26 @@ const IndexPage: React.FC = () => {
         <ServiceImage imgSource={henna} alt="henna" />
         <Description imgSrc={qm}>
           <h2>
-            Co to jest henna pudrowa <br />i dla kogo
+            {t("services.henna.title.0")}
+            <br />
+            {t("services.henna.title.1")}
           </h2>
           <p>
-            Brow henna, czyli inaczej henna pudrowa, to innowacyjna i naturalna
-            metoda barwienia włosków oraz skóry na pożądany kolor. Jest to
-            naturalny preparat oparty na składnikach roślinnych, który oprócz
-            efektu barwienia skóry i włosków jednocześnie je odżywia i
-            nabłyszcza.
+            {t("services.henna.description.0")}
             <br />
-            <mark>Zabieg przeznaczony jest</mark> dla osób, które chciałyby
-            podkreślić naturalny kształt swoich brwi, wypełnić ubytki, odżywić
-            swoje włoski lub ożywic kolor makijażu permanentnego.
+            <mark>{t("services.henna.description.1")}</mark>{" "}
+            {t("services.henna.description.2")}
           </p>
         </Description>
       </SectionWrapper>
       <SectionWrapper>
         <Description imgSrc={qm}>
-          <h2>Na czym polega zabieg laminacji brwi</h2>
+          <h2>{t("services.laminacja.title")}</h2>
           <p>
-            Nie każda z nas zostałą obdarowana gęstymi, krzaczastymi brwiami.
-            Włoski rosną nie tak jak byśmy chciały, niekiedy pojawiają się
-            ubytki i nie jesteśmy w stanie ich ładnie wystylizować.<br/>
-            <mark>Laminowanie brwi to zabieg </mark>który pozwala nam unieść
-            naturalne włoski, aby uzyskać pełne, gęste brwi. Polega na
-            wyprostowaniu i uniesieniu włosków za pomocą specjalnego preparatu,
-            który zapewnia włoskom większą elastyczność i umożliwia nadanie im
-            pożądanego kształtu, a tym samym zakryje wszelkie luki i odstające
-            włoski.
+            {t("services.laminacja.description.0")}
+            <br />
+            <mark>{t("services.laminacja.description.1")}</mark>
+            {t("services.laminacja.description.2")}
           </p>
         </Description>
         <ServiceImage imgSource={henna} alt="henna" />

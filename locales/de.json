@@ -1,7 +1,6 @@
 {
-  "hello": "Hallo!",
   "menu": {
-    "about": "Über mich",
+    "about": "Über uns",
     "services": "Dienstleistungen",
     "servicesOptions": {
       "brows": "Augenbrauen",
@@ -13,6 +12,32 @@
   },
   "subtitle": "Schön sein bedeutet, man selbst zu sein. <br /> Du musst nicht von anderen akzeptiert werden. <br/> Du musst dich selbst akzeptieren.",
   "buttonAction": "DIENSTLEISTUNGEN ANSEHEN",
-  "aboutDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor orci in tortor fermentum, vel tempor risus lacinia. Sed dictum ex at ex convallis, a luctus dolor tristique. Nulla ut velit rutrum, volutpat purus non, tristique odio. Integer ut nisl in mi dapibus volutpat. In pulvinar magna non ligula consequat, sed finibus ex lacinia. Fusce a diam nec odio congue dictum. Morbi eget ullamcorper mi. Duis sodales mauris nec.",
-  "liftingDescription": "Wimpernlifting ist eine Behandlung zum Anheben und Kräuseln der Wimpern, die einen <1>{{gold}}</1> <br /> Natürlicher Wimpern-Look befriedigt nicht immer Frauen, die auf einen intensiven, markanten Blick Wert legen. Wimpern sind oft dünn, hell und wachsen gerade, anstatt dicht und schwungvoll gekräuselt zu sein. Für Frauen, die einen natürlichen, aber sichtbaren Effekt wünschen, wird die Behandlung von Wimpernlifting / -laminierung empfohlen."
+  "aboutDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor orci in tortor fermentum, vel tempor risus lacinia. Sed dictum ex at ex convallis, a luctus dolor tristique. Nulla ut velit rutrum, volutpat purus non, tristique odio. Integer ut nisl in mi dapibus volutpat. In pulvinar magna non ligula consequat, sed finibus ex lacinia. Fusce a diam nec odio congue dictum. Morbi eget ullamcorper mi. Duis sodales mauris nec Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor orci in tortor fermentum, vel tempor risus lacinia. Sed dictum ex at ex convallis, a luctus dolor tristique. Nulla ut velit rutrum.",
+  "contact": ["Termine in unserem Salon können über soziale Medien vereinbart werden.",
+    "Wählen Sie Ihren bevorzugten Messenger und kontaktieren Sie uns, um einen Termin zu vereinbaren.",
+    "Gemeinsam werden wir einen passenden Termin finden und alle Ihre Fragen beantworten."
+  ],
+  "services": {
+    "lifting": {
+      "title": "Was ist Wimpernlifting?",
+      "description": ["Wimpernlifting ist eine Behandlung zum Anheben und Kräuseln der Wimpern, die einen", "natürlichen und langanhaltenden Effekt erzielt.", "Ein natürlicher Look der Wimpern befriedigt nicht immer Frauen, die nach einem intensiven und ausdrucksstarken Blick suchen. Wimpern sind oft dünn, hell und wachsen gerade anstatt dicht und schwungvoll gekräuselt zu sein. Für Frauen, die einen natürlichen, aber sichtbaren Effekt wünschen, empfiehlt sich eine Behandlung mit Wimpernlifting oder Wimpernlaminierung."]
+    },
+    "henna": {
+      "title": ["Was ist Pudrige Henna und für wen ist es geeignet?"],
+      "description": ["Brow Henna, auch bekannt als pudrige Henna, ist eine innovative und natürliche Methode zur Färbung von Härchen und Haut in die gewünschte Farbe. Es handelt sich um ein natürliches Produkt auf pflanzlicher Basis, das die Haare und die Haut neben dem Färbeeffekt auch pflegt und glänzend macht.", "Die Behandlung richtet sich an Personen,", "die ihren natürlichen Augenbrauenform betonen, Lücken füllen, ihre Haare pflegen oder die Farbe des Permanent-Make-ups auffrischen möchten."]
+    },
+    "laminacja": {
+      "title": "Was ist Augenbrauenlaminierung?",
+      "description": ["Nicht jede von uns wurde mit dichten, buschigen Augenbrauen gesegnet. Haare wachsen nicht immer so, wie wir es gerne hätten, manchmal gibt es Lücken und störrische Haare, die sich nicht gut stylen lassen.", "Augenbrauenlaminierung ist eine Behandlung,", "die es uns ermöglicht, natürliche Haare anzuheben, um volle, dichte Augenbrauen zu erhalten. Sie besteht darin, die Haare mit Hilfe eines speziellen Präparats zu glätten und anzuheben, das den Haaren mehr Elastizität verleiht und es ermöglicht, die gewünschte Form zu geben und damit Lücken und abstehende Haare zu bedecken."]
+    }
+  },
+  "brows": {
+    "whatIsItTitle": "Was ist Permanent-Make-up für Augenbrauen?",
+    "whatIsItDescription": ["Die Form der Augenbrauen ist eines der markantesten Merkmale im Gesicht. Die richtige Gestaltung kann das Erscheinungsbild des Gesichts subtil betonen und natürliche Asymmetrien kaschieren.",
+      "Permanent-Make-up für Augenbrauen ist eine spezialisierte kosmetische Behandlung, die natürliche Effekte zur Verbesserung von Form, Dichte und Kontur der Augenbrauen ermöglicht. Der Farbstoff wird mit einer Einwegnadel in die Haut eingeführt.",
+      "Im Gegensatz zu älteren Methoden des Permanent-Make-ups, die lebenslange Haltbarkeit boten, jedoch oft zu unerwünschten Verfärbungen und mangelnder Möglichkeit zur Änderung der Form führten, zielt modernes Permanent-Make-up von Brows Story darauf ab, einen möglichst natürlichen Effekt zu erzielen, um die Schönheit unserer Kunden zu betonen und ihnen Selbstvertrauen für jeden Tag zu schenken."
+    ]
+  },
+  "howLongTitle": "Wie lange hält der Effekt der Behandlung an?",
+  "forWhoTitle": "Für wen ist Permanent-Make-up geeignet?"
 }

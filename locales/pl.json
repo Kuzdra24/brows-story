@@ -13,8 +13,23 @@
   "subtitle": "Być pięknym to być sobą. <br /> Nie musisz być akceptowany przez innych. <br/> Musisz zaakaceptować siebie",
   "buttonAction": "ZOBACZ USŁUGI",
   "aboutDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor orci in tortor fermentum, vel tempor risus lacinia. Sed dictum ex at ex convallis, a luctus dolor tristique. Nulla ut velit rutrum, volutpat purus non, tristique odio. Integer ut nisl in mi dapibus volutpat. In pulvinar magna non ligula consequat, sed finibus ex lacinia. Fusce a diam nec odio congue dictum. Morbi eget ullamcorper mi. Duis sodales mauris nec Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor orci in tortor fermentum, vel tempor risus lacinia. Sed dictum ex at ex convallis, a luctus dolor tristique. Nulla ut velit rutrum.",
-  "liftingDescription": {
-    "first": "Lifting rzęs to zabieg podniesienia i podkręcenia rzęs, który daje<br /> Naturalny wygląd rzęs nie zawsze zadowala kobiety, którym zależy na intensywnym, wyrazistym spojrzeniu. Rzęsy często są rzadkie, jasne i rosną w lini prostej zamiast być gęste i zalotnie podkręcone. Dla kobiet, którym zależy na naturalnym, ale widocznym efekcie poleca się zabieg liftingu / laminaccji rzęs."
+  "contact": ["Rezerwacje w naszym salonie dokonujesz przez media społecznościowe.",
+    "Wybierz ulubiony komunikator i skontaktuj się z nami, by umówić wizytę.",
+    "Wspólnie ustalimy dogodny termin oraz odpowiemy na wszystkie pytania."
+  ],
+  "services": {
+    "lifting": {
+      "title": "Co to jest lifting rzęs",
+      "description": ["Lifting rzęs to zabieg podniesienia i podkręcenia rzęs, który daje", "naturalny trwały efekt.", "Naturalny wygląd rzęs nie zawsze zadowala kobiety, którym zależy na intensywnym, wyrazistym spojrzeniu. Rzęsy często są rzadkie, jasne i rosną w lini prostej zamiast być gęste i zalotnie podkręcone. Dla kobiet, którym zależy na naturalnym, ale widocznym efekcie poleca się zabieg liftingu / laminaccji rzęs."]
+    },
+    "henna": {
+      "title": ["Co to jest henna pudrowa ", "i dla kogo"],
+      "description" : ["Brow henna, czyli inaczej henna pudrowa, to innowacyjna i naturalna metoda barwienia włosków oraz skóry na pożądany kolor. Jest to naturalny preparat oparty na składnikach roślinnych, który oprócz efektu barwienia skóry i włosków jednocześnie je odżywia i nabłyszcza.", "Zabieg przeznaczony jest ", "dla osób, które chciałyby podkreślić naturalny kształt swoich brwi, wypełnić ubytki, odżywić swoje włoski lub ożywic kolor makijażu permanentnego."]
+    }, 
+    "laminacja": {
+      "title": "Na czym polega zabieg laminacji brwi", 
+      "description": ["Nie każda z nas zostałą obdarowana gęstymi, krzaczastymi brwiami. Włoski rosną nie tak jak byśmy chciały, niekiedy pojawiają się ubytki i nie jesteśmy w stanie ich ładnie wystylizować.", "Laminowanie brwi to zabieg,", "który pozwala nam unieść naturalne włoski, aby uzyskać pełne, gęste brwi. Polega na wyprostowaniu i uniesieniu włosków za pomocą specjalnego preparatu, który zapewnia włoskom większą elastyczność i umożliwia nadanie im pożądanego kształtu, a tym samym zakryje wszelkie luki i odstające włoski."]
+    }
   },
   "brows": {
     "whatIsItTitle": "Co to jest <br/> Makijaż permanentny brwi",
