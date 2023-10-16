@@ -24,5 +24,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     </>
   );
 };
+export function Head() {
+  return (
+    <>
+      {/* <html lang={i18n.language} /> */}
+      <title>Brows story</title>
+    </>
+  );
+}
 
 export default Layout;

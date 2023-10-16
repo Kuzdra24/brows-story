@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     a{
       color: inherit; 
+      text-decoration: none;
     }
   }
   *{

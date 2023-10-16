@@ -9,7 +9,7 @@ import qm from "../../assets/icons/questionMark.png";
 import { ServiceImage } from "../../components/Services/ServiceImage";
 import lifting from "../../assets/images/services/lifting.jpeg";
 import henna from "../../assets/images/services/henna.jpeg";
-import { Trans } from "react-i18next";
+import { Gallery } from "../../components/Gallery/Gallery";
 
 const Wrapper = styled.section`
   display: flex;
@@ -133,6 +133,8 @@ const IndexPage: React.FC = () => {
         </Description>
         <ServiceImage imgSource={henna} alt="henna" />
       </SectionWrapper>
+
+      <Gallery />
     </>
   );
 };

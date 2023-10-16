@@ -121,12 +121,14 @@ export const Contact: React.FC = () => {
     </Wrapper>
   ) : (
     <Wrapper>
-       <Subtitle>Kontakt</Subtitle>
+      <Subtitle>Kontakt</Subtitle>
       <MobileSocial>
-        <div>
-          <span>INSTAGRAM</span>
-          <img src={InstagramIcon} alt="instagram icon" width={40} />
-        </div>
+        <a href="https://www.instagram.com/brows_story_anna_nasciuk/" target="_blank">
+          <div>
+            <span>INSTAGRAM</span>
+            <img src={InstagramIcon} alt="instagram icon" width={40} />
+          </div>
+        </a>
         <div>
           <span>FACEBOOK</span>
           <img src={FacebookIcon} alt="facebook icon" width={40} />

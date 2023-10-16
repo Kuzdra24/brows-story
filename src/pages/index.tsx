@@ -19,7 +19,7 @@ const IndexPage = () => {
 export function Head() {
   return (
     <>
-      <html lang={i18n.language} />
+      {/* <html lang={i18n.language} /> */}
       <title>Brows story</title>
     </>
   );

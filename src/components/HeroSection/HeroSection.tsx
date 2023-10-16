@@ -5,14 +5,19 @@ import { Trans } from "react-i18next";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { Button } from "../UI/Button";
-import heroImgSrc from '../../assets/images/homePage/heroImg.jpeg'
+import heroImgSrc from "../../assets/images/homePage/heroImg.jpeg";
 import useWidth from "../../hooks/useWidth";
 
 const StyledTitle = styled.h1`
   font-size: 86px;
   text-align: center;
   font-family: Cinzel;
+
+  @media (max-width: 576px) {
+    font-size: 80px;
+  }
 `;
+
 const SectionWrapper = styled.section`
   display: flex;
   /* padding: 30px; */
@@ -54,39 +59,36 @@ const Wrapper = styled.div`
   }
 `;
 
+const MobileWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  hr {
+    margin: -20px 0 20px;
+    width: 50%;
+    border-width: 1px;
+    border-color: ${({ theme }) => theme.colors.dark};
+  }
+  p {
+    /* max-width: 330px; */
+    width: 100%;
+    font-size: ${({ theme }) => theme.fontSizes.xs};
+    text-align: center;
+    line-height: 2;
+  }
+`;
+
 const StyledImage = styled(GatsbyImage)`
   max-width: 400px;
   width: 100%;
   border-radius: 5px;
   box-shadow: ${({ theme }) => theme.boxShadow};
+  margin: 30px;
 `;
-type MobileBackgroundProps = HTMLProps<HTMLDivElement> & {
-  imgSrc: string;
-};
-
-const MobileBackground = styled(({ imgSrc, ...props }: MobileBackgroundProps) => (
-  <div {...props} />
-))`
-  background: #ffffff url(${({imgSrc}) => imgSrc}) no-repeat center;
-  background-size: cover;
-  position: relative;
-  border-radius: 5px;
-  z-index: -1;
-  padding: 10px;
-  &:after{
-    content:'';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #ffffff60;
-    z-index: -1;
-  }
-`
 
 const HeroSection: React.FC = () => {
-
   const { t } = useTranslation();
   const width = useWidth();
   const data = useStaticQuery(graphql`
@@ -106,8 +108,7 @@ const HeroSection: React.FC = () => {
     return <div>Image not found</div>;
   }
 
-  return (
-    width > 768 ?
+  return width > 768 ? (
     <SectionWrapper>
       <Wrapper>
         <StyledTitle>
@@ -120,24 +121,20 @@ const HeroSection: React.FC = () => {
         </p>
         <Button>{t("buttonAction")}</Button>
       </Wrapper>
-      <StyledImage
-        image={imageData}
-        alt="Opis obrazka"
-      />
-    </SectionWrapper>:
-    <MobileBackground imgSrc={heroImgSrc}>
-     <Wrapper>
-        <StyledTitle>
-          Brows Story <br />
-          Anna Naściuk
-        </StyledTitle>
-        <hr />
-        <p>
-          <Trans i18nKey="subtitle" />
-        </p>
-        <Button>{t("buttonAction")}</Button>
-      </Wrapper>
-    </MobileBackground>
+      <StyledImage image={imageData} alt="Opis obrazka" />
+    </SectionWrapper>
+  ) : (
+    <MobileWrapper>
+      <StyledTitle>
+        Brows Story <br />
+        Anna Naściuk
+      </StyledTitle>
+      <hr />
+      <p>
+        <Trans i18nKey="subtitle" />
+      </p>
+      <Button>{t("buttonAction")}</Button>
+    </MobileWrapper>
   );
 };
 
