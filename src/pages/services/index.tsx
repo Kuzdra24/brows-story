@@ -43,37 +43,38 @@ const SectionWrapper = styled.section`
 `;
 
 interface ImgPropTypes {
-  imgSrc: string;
+  imgSrc?: string;
 }
 
-const Description = styled.div<ImgPropTypes>`
+const Description = styled.div`
   max-width: 600px;
   width: 100%;
   margin: 0 40px;
-  h2 {
-    font-family: Cinzel;
-    font-size: 32px;
-    position: relative;
-    max-width: 480px;
-    width: 100%;
-    &:after {
-      content: "";
-      background-image: url(${({ imgSrc }) => imgSrc});
-      background-size: cover;
-      background-position: center;
-      width: 50px;
-      height: 60px;
-      position: absolute;
-      z-index: -1;
-      top: -20px;
-      right: -20px;
-    }
-  }
   p {
     line-height: 1.65;
     mark {
       background-color: ${({ theme }) => theme.colors.secondary};
     }
+  }
+`;
+
+const StyledTitle = styled.h2<ImgPropTypes>`
+  font-family: Cinzel;
+  font-size: 32px;
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+  &:after {
+    content: "";
+    background-image: url(${({ imgSrc }) => imgSrc && imgSrc});
+    background-size: cover;
+    background-position: center;
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+    right: -20px;
   }
 `;
 
@@ -94,8 +95,8 @@ const IndexPage: React.FC = () => {
         />
       </Wrapper>
       <SectionWrapper>
-        <Description imgSrc={qm}>
-          <h2>{t("services.lifting.title")}</h2>
+        <Description>
+          <StyledTitle imgSrc={qm}>{t("services.lifting.title")}</StyledTitle>
           <p>
             {t("services.lifting.description.0")}
             <mark> {t("services.lifting.description.1")} </mark>
@@ -107,12 +108,12 @@ const IndexPage: React.FC = () => {
       </SectionWrapper>
       <SectionWrapper>
         <ServiceImage imgSource={henna} alt="henna" />
-        <Description imgSrc={qm}>
-          <h2>
+        <Description>
+          <StyledTitle imgSrc={qm}>
             {t("services.henna.title.0")}
             <br />
             {t("services.henna.title.1")}
-          </h2>
+          </StyledTitle>
           <p>
             {t("services.henna.description.0")}
             <br />
@@ -122,8 +123,8 @@ const IndexPage: React.FC = () => {
         </Description>
       </SectionWrapper>
       <SectionWrapper>
-        <Description imgSrc={qm}>
-          <h2>{t("services.laminacja.title")}</h2>
+        <Description>
+          <StyledTitle imgSrc={qm}>{t("services.laminacja.title")}</StyledTitle>
           <p>
             {t("services.laminacja.description.0")}
             <br />
@@ -134,7 +135,10 @@ const IndexPage: React.FC = () => {
         <ServiceImage imgSource={henna} alt="henna" />
       </SectionWrapper>
 
-      <Gallery />
+      <SectionWrapper style={{flexDirection: "column"}}>
+        <StyledTitle style={{textAlign: "center" }}>Zobacz realizacje</StyledTitle>
+        <Gallery />
+      </SectionWrapper >
     </>
   );
 };

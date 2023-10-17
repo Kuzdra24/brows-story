@@ -11,6 +11,13 @@ const GalleryWrapper = styled.div`
   grid-row-gap: 0px;
   height: 400px;
   margin-bottom: 100px;
+  @media (max-width: 726px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 interface ImageNode {
@@ -35,25 +42,33 @@ const gridAreaByIndex = (idx: number) => {
       return "4 / 3 / 6 / 4";
     case 6:
       return "1 / 4 / 6 / 5";
-    
   }
 };
 
 const ImageWrapper = styled.div<{ idx: number }>`
   grid-area: ${(props) => gridAreaByIndex(props.idx)};
   margin: 6px;
+  overflow: hidden;
 `;
 
 const StyledImage = styled(GatsbyImage)`
   object-fit: cover;
   width: 200px;
   height: 100%;
+  transition: transform 0.4s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.07);
+  }
+  @media (max-width: 726px){
+    width: 250px;
+  }
 `;
 
 export const Gallery = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: { relativePath: { regex: "/(services)/" } }) {
+      allFile(filter: { relativePath: { regex: "/(servicesGallery)/" } }) {
         edges {
           node {
             id
@@ -71,22 +86,18 @@ export const Gallery = () => {
   `);
 
   const imageList: ImageNode[] = data.allFile.edges;
-
   return (
-    <div>
-      <h2>Gallery</h2>
-      <GalleryWrapper>
-        {imageList.map((image, index) => {
-          const imageData = getImage(image.node.childImageSharp);
-          return (
-            <ImageWrapper key={index} idx={index+1}>
-              {imageData && (
-                <StyledImage image={imageData} alt={`Image ${index}`} />
-              )}
-            </ImageWrapper>
-          );
-        })}
-      </GalleryWrapper>
-    </div>
+    <GalleryWrapper>
+      {imageList.map((image, index) => {
+        const imageData = getImage(image.node.childImageSharp);
+        return (
+          <ImageWrapper key={index} idx={index + 1}>
+            {imageData && (
+              <StyledImage image={imageData} alt={`Image ${index}`} />
+            )}
+          </ImageWrapper>
+        );
+      })}
+    </GalleryWrapper>
   );
 };
