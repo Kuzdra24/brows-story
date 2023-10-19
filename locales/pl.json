@@ -39,5 +39,12 @@
     ],
     "howLongTitle": "Jak długo utrzybuje się efekt zabiegu?",
     "forWhoTitle": "Dla kogo jest makijaż permanentny"
+  },
+  "pricelist": {
+    "brows": "brwi",
+    "browsServices": ["makijaż permanentny brwi", "dopigmentowanie (do 3 miesiecy)", "dopigmentowanie po czasie"],
+    "mouth": "usta",
+    "mouthServices": ["makijaż permamentny ust", "dopigmentowanie (do 3 miesiecy)"],
+    "rest": ["henna pudrowa", "laminacja brwi z farbka", "liftingF"]
   }
 }

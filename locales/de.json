@@ -39,5 +39,12 @@
     ]
   },
   "howLongTitle": "Wie lange hält der Effekt der Behandlung an?",
-  "forWhoTitle": "Für wen ist Permanent-Make-up geeignet?"
+  "forWhoTitle": "Für wen ist Permanent-Make-up geeignet?",
+  "pricelist": {
+    "brows": "Augenbrauen",
+    "browsServices": ["Permanent Make-up für Augenbrauen", "Nachpigmentierung (bis zu 3 Monate)", "Nachpigmentierung nach längerer Zeit"],
+    "mouth": "Lippen",
+    "mouthServices": ["Permanent Make-up für Lippen", "Nachpigmentierung (bis zu 3 Monate)"],
+    "rest": ["Puder-Henna", "Augenbrauenlaminierung mit Farbe", "Wimpernlifting"]
+  }
 }
