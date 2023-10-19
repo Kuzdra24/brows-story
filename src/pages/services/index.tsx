@@ -3,13 +3,13 @@ import { useTranslation } from "react-i18next";
 import ServiceCard from "../../components/Services/ServiceCard";
 import eyeBrowsSrc from "../../assets/images/services/eyebrows.jpeg";
 import mouthSrc from "../../assets/images/services/mouth.jpeg";
-import styled from "styled-components";
-// import i18n from "../../i18n";
+import styled, { keyframes } from "styled-components";
 import qm from "../../assets/icons/questionMark.png";
 import { ServiceImage } from "../../components/Services/ServiceImage";
 import lifting from "../../assets/images/services/lifting.jpeg";
 import henna from "../../assets/images/services/henna.jpeg";
 import { Gallery } from "../../components/Gallery/Gallery";
+import useElementVisibility from "../../hooks/useElementVisibility";
 
 const Wrapper = styled.section`
   display: flex;
@@ -78,8 +78,39 @@ const StyledTitle = styled.h2<ImgPropTypes>`
   }
 `;
 
+const TitleAnimation = keyframes`
+  from{
+    width: 0;
+  }
+  to{
+    width: 200px;
+  }
+`;
+
+const StyledGalleryTitle = styled.h2<ImgPropTypes>`
+  font-family: Cinzel;
+  font-size: 32px;
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 45px;
+    background-color: ${({ theme }) => theme.colors.secondary};
+    z-index: -1;
+    top: 0;
+    right: 64px;
+    animation: ${TitleAnimation} 0.6s cubic-bezier(0.23, 0.54, 1, 0.99);
+  }
+`;
+
 const IndexPage: React.FC = () => {
   const { t } = useTranslation();
+  const isVisable = useElementVisibility("gallery-title");
   return (
     <>
       <Wrapper>
@@ -135,10 +166,12 @@ const IndexPage: React.FC = () => {
         <ServiceImage imgSource={henna} alt="henna" />
       </SectionWrapper>
 
-      <SectionWrapper style={{flexDirection: "column"}}>
-        <StyledTitle style={{textAlign: "center" }}>Zobacz realizacje</StyledTitle>
+      <SectionWrapper id="gallery-title" style={{ flexDirection: "column" }}>
+        {isVisable && (
+          <StyledGalleryTitle>Zobacz realizacje</StyledGalleryTitle>
+        )}
         <Gallery />
-      </SectionWrapper >
+      </SectionWrapper>
     </>
   );
 };

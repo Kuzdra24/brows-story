@@ -12,6 +12,14 @@ const config: GatsbyConfig = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'content',
+        path: `${__dirname}/src/content`,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -22,6 +30,7 @@ const config: GatsbyConfig = {
         display: 'swap',
       },
     },
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
