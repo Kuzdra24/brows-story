@@ -14,17 +14,16 @@ const StyledTitle = styled.h1`
   font-family: Cinzel;
 
   @media (max-width: 576px) {
-    font-size: 80px;
+    font-size: 54px;
   }
 `;
 
 const SectionWrapper = styled.section`
   display: flex;
-  /* padding: 30px; */
   justify-content: center;
   max-width: 1200px;
   width: 100%;
-  /* height: 80vh; */
+  background: url(heroImgSrc) no-repeat right top;
   &:before {
     content: "";
     background-color: ${({ theme }) => theme.colors.secondary}60;
@@ -59,12 +58,26 @@ const Wrapper = styled.div`
   }
 `;
 
-const MobileWrapper = styled.div`
+const MobileWrapper = styled.div<{ imgSrc: string }>`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   flex: 1;
+  background-image: url(${({ imgSrc }) => imgSrc});
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+  margin: 10px;
+  padding: 30px 0;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
   hr {
     margin: -20px 0 20px;
     width: 50%;
@@ -77,6 +90,14 @@ const MobileWrapper = styled.div`
     font-size: ${({ theme }) => theme.fontSizes.xs};
     text-align: center;
     line-height: 2;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff5e;
+    backdrop-filter: blur(3px);
   }
 `;
 
@@ -124,16 +145,18 @@ const HeroSection: React.FC = () => {
       <StyledImage image={imageData} alt="Opis obrazka" />
     </SectionWrapper>
   ) : (
-    <MobileWrapper>
-      <StyledTitle>
-        Brows Story <br />
-        Anna Naściuk
-      </StyledTitle>
-      <hr />
-      <p>
-        <Trans i18nKey="subtitle" />
-      </p>
-      <Button>{t("buttonAction")}</Button>
+    <MobileWrapper imgSrc={heroImgSrc}>
+      <div>
+        <StyledTitle>
+          Brows Story <br />
+          Anna Naściuk
+        </StyledTitle>
+        <hr />
+        <p>
+          <Trans i18nKey="subtitle" />
+        </p>
+        <Button>{t("buttonAction")}</Button>
+      </div>
     </MobileWrapper>
   );
 };
