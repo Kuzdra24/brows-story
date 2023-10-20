@@ -13,14 +13,6 @@ const config: GatsbyConfig = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     "gatsby-transformer-remark",
-    "gatsby-plugin-mdx",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "content",
-        path: `${__dirname}/src/content`,
-      },
-    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

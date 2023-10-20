@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
+import dolarIcon from "../assets/icons/icons8-dolar-64.png";
 
 interface ImgPropTypes {
   imgSrc?: string;
@@ -10,18 +11,19 @@ const StyledTitle = styled.h2<ImgPropTypes>`
   font-family: Cinzel;
   font-size: 32px;
   position: relative;
-  max-width: 480px;
+  max-width: 210px;
   width: 100%;
+  text-align: center;
   &:after {
     content: "";
     background-image: url(${({ imgSrc }) => imgSrc && imgSrc});
     background-size: cover;
     background-position: center;
-    width: 50px;
+    width: 60px;
     height: 60px;
     position: absolute;
     z-index: -1;
-    top: -20px;
+    top: -10px;
     right: -20px;
   }
 `;
@@ -29,7 +31,13 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  section{
+    width: 100%;
+  }
+  
 `;
 const MenuItem = styled.div`
   display: flex;
@@ -56,7 +64,7 @@ export default function PriceList() {
 
   return (
     <Wrapper>
-      <StyledTitle>Cennik</StyledTitle>
+      <StyledTitle imgSrc={dolarIcon}>Cennik</StyledTitle>
       <section>
         <h2>{t("pricelist.brows")}</h2>
         <ul>

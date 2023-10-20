@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { useStaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
@@ -60,9 +60,21 @@ const StyledImage = styled(GatsbyImage)`
   &:hover {
     transform: scale(1.07);
   }
-  @media (max-width: 726px){
+  @media (max-width: 726px) {
     width: 250px;
   }
+`;
+const Image = styled.div`
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #30303950;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
 `;
 
 export const Gallery = () => {
@@ -85,19 +97,45 @@ export const Gallery = () => {
     }
   `);
 
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState<any>();
+
   const imageList: ImageNode[] = data.allFile.edges;
   return (
-    <GalleryWrapper>
-      {imageList.map((image, index) => {
-        const imageData = getImage(image.node.childImageSharp);
-        return (
-          <ImageWrapper key={index} idx={index + 1}>
-            {imageData && (
-              <StyledImage image={imageData} alt={`Image ${index}`} />
-            )}
-          </ImageWrapper>
-        );
-      })}
-    </GalleryWrapper>
+    <>
+      <GalleryWrapper>
+        {imageList.map((image, index) => {
+          const imageData = getImage(image.node.childImageSharp);
+          return (
+            <>
+              {imageData && (
+                <ImageWrapper
+                  onClick={() => {
+                    setIsOpen(true);
+                    setCurrentImage(imageData);
+                  }}
+                  key={index}
+                  idx={index + 1}
+                >
+                  <StyledImage image={imageData} alt={`Image ${index}`} />
+                </ImageWrapper>
+              )}
+            </>
+          );
+        })}
+      </GalleryWrapper>
+
+      {isOpen && (
+        <Image onClick={() => {setIsOpen(false)}}>
+          {currentImage && (
+            <GatsbyImage
+              style={{ width: "350px" }}
+              image={currentImage}
+              alt="imf"
+            />
+          )}
+        </Image>
+      )}
+    </>
   );
 };
