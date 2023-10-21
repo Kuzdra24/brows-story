@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 const ImageWrapper = styled.div`
   flex: 1;
