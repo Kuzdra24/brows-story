@@ -1,9 +1,17 @@
 import { useState, useEffect } from 'react';
 
 function useWidth(): number {
-  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+  const isClient = typeof window === 'object'; 
+
+  const [windowWidth, setWindowWidth] = useState<number>(
+    isClient ? window.innerWidth : 992
+  );
 
   useEffect(() => {
+    if (!isClient) {
+      return; 
+    }
+
     function handleResize() {
       setWindowWidth(window.innerWidth);
     }
