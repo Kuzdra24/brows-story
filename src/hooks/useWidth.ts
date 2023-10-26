@@ -4,7 +4,7 @@ function useWidth(): number {
   const isClient = typeof window === 'object'; 
 
   const [windowWidth, setWindowWidth] = useState<number>(
-    isClient ? window.innerWidth : 992
+    isClient ? window.innerWidth : 1200
   );
 
   useEffect(() => {
