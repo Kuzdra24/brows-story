@@ -5,8 +5,11 @@ import qm from "../../assets/icons/questionMark.png";
 import clock from "../../assets/icons/clock.png";
 import eye from "../../assets/icons/eye.png";
 import { graphql, useStaticQuery } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import {  IGatsbyImageData } from "gatsby-plugin-image";
+import {StyledImage, StyledTitle} from './styles'
 import { Button } from "../../components/UI/Button";
+import useWidth from "../../hooks/useWidth";
+import downloadLink from "../../assets/download/how2Prepare.jpg";
 
 const Wrapper = styled.section`
   display: flex;
@@ -15,6 +18,7 @@ const Wrapper = styled.section`
   max-width: 1200px;
   width: 100%;
   flex-wrap: wrap;
+  margin: 0 auto 80px;
   /* height: 80vh; */
   &:before {
     content: "";
@@ -27,7 +31,7 @@ const Wrapper = styled.section`
     z-index: -1;
     transform: rotate(-40deg);
     @media (max-width: 1250px) {
-      display: none
+      display: none;
     }
   }
   div {
@@ -58,7 +62,7 @@ const Wrapper = styled.section`
   }
   p {
     line-height: 1.5;
-    @media (max-width: ${({theme}) => theme.mediaQueries.s}){
+    @media (max-width: ${({ theme }) => theme.mediaQueries.s}) {
       text-align: center;
     }
     mark {
@@ -67,41 +71,6 @@ const Wrapper = styled.section`
   }
 `;
 
-interface ImgPropTypes {
-  imgSrc?: string;
-}
-
-const StyledTitle = styled.h1<ImgPropTypes>`
-  font-family: Cinzel;
-  font-size: 32px;
-  position: relative;
-  @media (max-width: ${({theme}) => theme.mediaQueries.m}) {
-    text-align: center;
-  }
-  &:after {
-    content: "";
-    background-image: url(${({ imgSrc }) => imgSrc});
-    background-size: cover;
-    background-position: center;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-  }
-`;
-
-const StyledImage = styled(GatsbyImage)`
-  max-width: 450px;
-  min-width: 380px;
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: ${({ theme }) => theme.boxShadow};
-  @media (max-width: ${({theme}) => theme.mediaQueries.s}){
-    min-width: 280px;
-  } 
-`;
 
 const ColWrapper = styled.section`
   width: 100%;
@@ -141,6 +110,8 @@ const IndexPage = () => {
     return <div>Image not found</div>;
   }
 
+  const width = useWidth();
+
   return (
     <>
       <Wrapper>
@@ -158,7 +129,7 @@ const IndexPage = () => {
         </div>
       </Wrapper>
       <Wrapper>
-        <div >
+        <div>
           <StyledTitle imgSrc={clock} style={{ alignSelf: "center" }}>
             {t("brows.howLongTitle")}
           </StyledTitle>
@@ -178,7 +149,11 @@ const IndexPage = () => {
         </div>
       </Wrapper>
       <Wrapper>
-        <StyledImage image={secondImageData} alt="Opis obrazka" />
+        <StyledImage
+          image={secondImageData}
+          alt="Opis obrazka"
+          style={width > 750 ? { marginRight: "40px" } : {}}
+        />
         <div>
           <StyledTitle imgSrc={eye}>{t("brows.forWhoTitle")}</StyledTitle>
           <p>
@@ -210,7 +185,13 @@ const IndexPage = () => {
         <StyledTitle imgSrc={qm}>
           Zobacz jak przygotować się do zabiegu
         </StyledTitle>
-        <Button>POBIERZ</Button>
+        <a
+          href={downloadLink}
+          style={{ width: "100%", display: "flex", justifyContent: "center" }}
+          download
+        >
+          <Button>POBIERZ</Button>{" "}
+        </a>
       </ColWrapper>
     </>
   );

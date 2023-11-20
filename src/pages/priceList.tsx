@@ -7,9 +7,9 @@ interface ImgPropTypes {
   imgSrc?: string;
 }
 
-const StyledTitle = styled.h2<ImgPropTypes>`
+const StyledTitle = styled.h1<ImgPropTypes>`
   font-family: Cinzel;
-  font-size: 32px;
+  font-size: 36px;
   position: relative;
   max-width: 210px;
   width: 100%;
@@ -24,7 +24,7 @@ const StyledTitle = styled.h2<ImgPropTypes>`
     position: absolute;
     z-index: -1;
     top: -10px;
-    right: -20px;
+    right: -10px;
   }
 `;
 const Wrapper = styled.div`
@@ -34,10 +34,19 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  section{
+  /* padding: 20px; */
+  section {
     width: 100%;
+    margin: 20px;
+    ul {
+      padding: 0 15px;
+      li {
+        margin: 20px auto;
+        list-style: none;
+        margin: 0
+      }
+    }
   }
-  
 `;
 const MenuItem = styled.div`
   display: flex;
@@ -47,26 +56,29 @@ const MenuItem = styled.div`
     margin-left: 5px;
   }
 `;
-
+const StyledSubtitle = styled.h2`
+  font-family: cinzel;
+  font-size: 32px;
+`;
 export default function PriceList() {
   const { t } = useTranslation();
 
   const pricesBrows = [
-    { product: t("pricelist.browsServices.0"), price: "300€" },
+    { product: t("pricelist.browsServices.0"), price: "240€" },
     { product: t("pricelist.browsServices.1"), price: "35€" },
     { product: t("pricelist.browsServices.2"), price: "80€" },
   ];
 
   const pricesMouth = [
-    { product: t("pricelist.mouthServices.0"), price: "300€" },
-    { product: t("pricelist.browsServices.1"), price: "35€" },
+    { product: t("pricelist.mouthServices.0"), price: "200€" },
+    { product: t("pricelist.browsServices.1"), price: "50€" },
   ];
 
   return (
     <Wrapper>
       <StyledTitle imgSrc={dolarIcon}>Cennik</StyledTitle>
       <section>
-        <h2>{t("pricelist.brows")}</h2>
+        <StyledSubtitle>{t("pricelist.brows")}</StyledSubtitle>
         <ul>
           {pricesBrows.map((e) => (
             <li>
@@ -77,7 +89,7 @@ export default function PriceList() {
             </li>
           ))}
         </ul>
-        <h2>{t("pricelist.mouth")}</h2>
+        <StyledSubtitle>{t("pricelist.mouth")}</StyledSubtitle>
         <ul>
           {pricesMouth.map((e) => (
             <li>

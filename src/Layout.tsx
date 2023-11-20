@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
+import { Helmet } from "react-helmet";
+import i18n from 'i18next';
 import styled from "styled-components";
-// import Footer from './Footer';
 
 const Wrapper = styled.main`
   /* width: 100vw; */
@@ -14,24 +15,21 @@ const Wrapper = styled.main`
 
 interface LayoutProps {
   children: React.ReactNode;
+  pageTitle: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<LayoutProps> = ({ children, pageTitle }) => {
   return (
     <>
+      <Helmet>
+        <html lang={i18n.language} />
+        <title>{pageTitle ? `Brows story | ${pageTitle}` : 'Brows Story' }</title>
+      </Helmet>
       <Navbar />
       <Wrapper>{children}</Wrapper>
       {/* <Footer /> */}
     </>
   );
 };
-export function Head() {
-  return (
-    <>
-      {/* <html lang={i18n.language} /> */}
-      <title>Brows story</title>
-    </>
-  );
-}
 
 export default Layout;
