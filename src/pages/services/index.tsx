@@ -87,7 +87,7 @@ const TitleAnimation = keyframes`
   }
 `;
 
-const StyledGalleryTitle = styled.h2<ImgPropTypes>`
+export const StyledGalleryTitle = styled.h2<ImgPropTypes>`
   font-family: Cinzel;
   font-size: 32px;
   position: relative;

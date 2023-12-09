@@ -1,10 +1,13 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 import styled from "styled-components";
 import { StyledImage, StyledTitle, StyledAnimatedTitle } from "./styles";
 import { IGatsbyImageData } from "gatsby-plugin-image";
 import qm from "../../assets/icons/questionMark.png";
+import { CarouselGallery } from "../../components/Gallery/CarouselGallery";
+import { StyledGalleryTitle } from "./index";
+import { Button } from "../../components/UI/Button";
 
 const Wrapper = styled.section`
   display: flex;
@@ -64,7 +67,7 @@ const IndexPage = () => {
 
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: { relativePath: { regex: "/services/mouthGallery/" } }) {
+      allFile(filter: { relativePath: { regex: "/services/lipsPage/" } }) {
         edges {
           node {
             relativePath
@@ -78,14 +81,14 @@ const IndexPage = () => {
   `);
 
   const imageData: IGatsbyImageData | undefined =
-    data.allFile.edges[1].node.childImageSharp?.gatsbyImageData;
+    data.allFile.edges[0].node.childImageSharp?.gatsbyImageData;
 
   if (!imageData) {
     return <div>Image not found</div>;
   }
 
   const secondImageData: IGatsbyImageData | undefined =
-    data.allFile.edges[4].node.childImageSharp?.gatsbyImageData;
+    data.allFile.edges[1].node.childImageSharp?.gatsbyImageData;
 
   if (!secondImageData) {
     return <div>Image not found</div>;
@@ -188,6 +191,11 @@ const IndexPage = () => {
           </li>
         </StyledList>
       </Wrapper>
+      <StyledGalleryTitle>Zobacz realizacje</StyledGalleryTitle>
+      <CarouselGallery />
+      <Link to={'/contraindications'}>
+        <Button>ZOBACZ PRZECIWSKAZANIA</Button>
+      </Link>
     </>
   );
 };
