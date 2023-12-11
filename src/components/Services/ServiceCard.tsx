@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "../UI/Button";
-import { Link } from "gatsby";
 
 interface CardWrapperProps {
   backgroundImage: string;
@@ -63,9 +62,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     <CardWrapper backgroundImage={backgroundImage}>
       <ServiceName>
         <span>{name}</span>
-        <Link to={slug}>
+        <a href={slug}>
           <Button style={{ width: "300px" }}>WIĘCEJ</Button>
-        </Link>
+        </a>
       </ServiceName>
     </CardWrapper>
   );
