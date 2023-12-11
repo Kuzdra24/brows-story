@@ -4,12 +4,15 @@ import styled from "styled-components";
 import qm from "../../assets/icons/questionMark.png";
 import clock from "../../assets/icons/clock.png";
 import eye from "../../assets/icons/eye.png";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import {  IGatsbyImageData } from "gatsby-plugin-image";
 import {StyledImage, StyledTitle} from './styles'
 import { Button } from "../../components/UI/Button";
 import useWidth from "../../hooks/useWidth";
 import downloadLink from "../../assets/download/how2Prepare.jpg";
+import { EyeBrowsGallery } from "../../components/Gallery/EyeBrowsGallery";
+import { StyledGalleryTitle } from "./index";
+
 
 const Wrapper = styled.section`
   display: flex;
@@ -193,6 +196,11 @@ const IndexPage = () => {
           <Button>POBIERZ</Button>{" "}
         </a>
       </ColWrapper>
+      <StyledGalleryTitle style={{margin: '85px 0 30px'}}>Zobacz realizacje</StyledGalleryTitle>
+      <EyeBrowsGallery/>
+      <Link to={'/contraindications'}>
+        <Button>ZOBACZ PRZECIWSKAZANIA</Button>
+      </Link>
     </>
   );
 };

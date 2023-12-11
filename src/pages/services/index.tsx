@@ -58,7 +58,7 @@ const Description = styled.div`
   }
 `;
 
-const StyledTitle = styled.h2<ImgPropTypes>`
+export const StyledTitle = styled.h2<ImgPropTypes>`
   font-family: Cinzel;
   font-size: 32px;
   position: relative;

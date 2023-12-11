@@ -43,7 +43,7 @@ const Wrapper = styled.div`
       li {
         margin: 20px auto;
         list-style: none;
-        margin: 0
+        margin: 0;
       }
     }
   }
@@ -74,6 +74,12 @@ export default function PriceList() {
     { product: t("pricelist.browsServices.1"), price: "50€" },
   ];
 
+  const pricesRest = [
+    { product: t("pricelist.rest.0"), price: "35€" },
+    { product: t("pricelist.rest.1"), price: "40€" },
+    { product: t("pricelist.rest.2"), price: "40€" },
+  ];
+
   return (
     <Wrapper>
       <StyledTitle imgSrc={dolarIcon}>Cennik</StyledTitle>
@@ -92,6 +98,25 @@ export default function PriceList() {
         <StyledSubtitle>{t("pricelist.mouth")}</StyledSubtitle>
         <ul>
           {pricesMouth.map((e) => (
+            <li>
+              <MenuItem>
+                <span>{e.product}</span>
+                <strong>{e.price}</strong>
+              </MenuItem>
+            </li>
+          ))}
+        </ul>
+        <hr />
+        <MenuItem style={{margin: "20px 0 40px"}}>
+          <span>
+            Odswieżenie makijażu pernamentnego wykonanego w <br />
+            Brows Story Anna Nasciuk do 1 roku
+          </span>
+          <strong> -50%</strong>
+        </MenuItem>
+        <StyledSubtitle>Stylizacja brwi</StyledSubtitle>
+        <ul>
+        {pricesRest.map((e) => (
             <li>
               <MenuItem>
                 <span>{e.product}</span>
