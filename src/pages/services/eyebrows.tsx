@@ -6,7 +6,7 @@ import clock from "../../assets/icons/clock.png";
 import eye from "../../assets/icons/eye.png";
 import { graphql, useStaticQuery, Link } from "gatsby";
 import {  IGatsbyImageData } from "gatsby-plugin-image";
-import {StyledImage, StyledTitle} from './styles'
+import {StyledImage, StyledTitle} from '../../assets/styles/styles'
 import { Button } from "../../components/UI/Button";
 import useWidth from "../../hooks/useWidth";
 import downloadLink from "../../assets/download/how2Prepare.jpg";

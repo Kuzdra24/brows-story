@@ -2,7 +2,7 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import styled from "styled-components";
-import { StyledImage, StyledTitle, StyledAnimatedTitle } from "./styles";
+import { StyledImage, StyledTitle, StyledAnimatedTitle } from "../../assets/styles/styles";
 import { IGatsbyImageData } from "gatsby-plugin-image";
 import qm from "../../assets/icons/questionMark.png";
 import { CarouselGallery } from "../../components/Gallery/CarouselGallery";
