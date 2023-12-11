@@ -1,4 +1,4 @@
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 interface ImgPropTypes {
@@ -45,28 +45,28 @@ const TitleAnimation = keyframes`
   }
 `;
 export const StyledAnimatedTitle = styled.h2`
-font-family: Cinzel;
-font-size: 32px;
-position: relative;
-max-width: 510px;
-width: 100%;
-text-align: center;
-@media (max-width: 380px) {
-  font-size: 28px;
-}
-&:before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 200px;
-  height: 45px;
-  background-color: ${({ theme }) => theme.colors.secondary};
-  z-index: -1;
-  top: 0;
-  left: 0;
-  animation: ${TitleAnimation} 0.6s cubic-bezier(0.23, 0.54, 1, 0.99);
+  font-family: Cinzel;
+  font-size: 32px;
+  position: relative;
+  max-width: 510px;
+  width: 100%;
+  text-align: center;
   @media (max-width: 380px) {
-  height: 38px;
-}
-}
+    font-size: 28px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 45px;
+    background-color: ${({ theme }) => theme.colors.secondary};
+    z-index: -1;
+    top: 0;
+    left: 0;
+    animation: ${TitleAnimation} 0.6s cubic-bezier(0.23, 0.54, 1, 0.99);
+    @media (max-width: 380px) {
+      height: 38px;
+    }
+  }
 `;
