@@ -21,6 +21,10 @@ const ContentWrapper = styled.div`
     flex: 1;
     margin: 50px;
     line-height: 1.6;
+    min-width: 320px;
+    @media (max-width: 576px) {
+      margin: 20px;
+    }
   }
 `;
 

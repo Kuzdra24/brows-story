@@ -4,16 +4,24 @@ import styled from "styled-components";
 import qm from "../../assets/icons/questionMark.png";
 import clock from "../../assets/icons/clock.png";
 import eye from "../../assets/icons/eye.png";
-import { graphql, useStaticQuery } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { graphql, useStaticQuery, Link } from "gatsby";
+import {  IGatsbyImageData } from "gatsby-plugin-image";
+import {StyledImage, StyledTitle} from './styles'
 import { Button } from "../../components/UI/Button";
+import useWidth from "../../hooks/useWidth";
+import downloadLink from "../../assets/download/how2Prepare.jpg";
+import { EyeBrowsGallery } from "../../components/Gallery/EyeBrowsGallery";
+import { StyledGalleryTitle } from "./index";
+
 
 const Wrapper = styled.section`
   display: flex;
-  padding: 30px;
+  /* padding: 30px; */
   justify-content: center;
   max-width: 1200px;
   width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto 80px;
   /* height: 80vh; */
   &:before {
     content: "";
@@ -25,12 +33,16 @@ const Wrapper = styled.section`
     left: -69%;
     z-index: -1;
     transform: rotate(-40deg);
+    @media (max-width: 1250px) {
+      display: none;
+    }
   }
   div {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 320px;
     ul {
       list-style-type: none;
       li {
@@ -53,41 +65,15 @@ const Wrapper = styled.section`
   }
   p {
     line-height: 1.5;
+    @media (max-width: ${({ theme }) => theme.mediaQueries.s}) {
+      text-align: center;
+    }
     mark {
       background-color: ${({ theme }) => theme.colors.secondary};
     }
   }
 `;
 
-interface ImgPropTypes {
-  imgSrc?: string;
-}
-
-const StyledTitle = styled.h1<ImgPropTypes>`
-  font-family: Cinzel;
-  font-size: 32px;
-  position: relative;
-  &:after {
-    content: "";
-    background-image: url(${({ imgSrc }) => imgSrc});
-    background-size: cover;
-    background-position: center;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 10;
-  }
-`;
-
-
-const StyledImage = styled(GatsbyImage)`
-  max-width: 450px;
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: ${({ theme }) => theme.boxShadow};
-`;
 
 const ColWrapper = styled.section`
   width: 100%;
@@ -95,7 +81,7 @@ const ColWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 const IndexPage = () => {
   const { t } = useTranslation();
   const data = useStaticQuery(graphql`
@@ -127,6 +113,8 @@ const IndexPage = () => {
     return <div>Image not found</div>;
   }
 
+  const width = useWidth();
+
   return (
     <>
       <Wrapper>
@@ -144,7 +132,7 @@ const IndexPage = () => {
         </div>
       </Wrapper>
       <Wrapper>
-        <div style={{ padding: "40px" }}>
+        <div>
           <StyledTitle imgSrc={clock} style={{ alignSelf: "center" }}>
             {t("brows.howLongTitle")}
           </StyledTitle>
@@ -164,8 +152,12 @@ const IndexPage = () => {
         </div>
       </Wrapper>
       <Wrapper>
-        <StyledImage image={secondImageData} alt="Opis obrazka" />
-        <div style={{ padding: "40px" }}>
+        <StyledImage
+          image={secondImageData}
+          alt="Opis obrazka"
+          style={width > 750 ? { marginRight: "40px" } : {}}
+        />
+        <div>
           <StyledTitle imgSrc={eye}>{t("brows.forWhoTitle")}</StyledTitle>
           <p>
             Makijaż permamentny brwi polecany jest przede wszystkim paniom,
@@ -194,11 +186,21 @@ const IndexPage = () => {
       </Wrapper>
       <ColWrapper>
         <StyledTitle imgSrc={qm}>
-          Zobacz jak przygotować się do zabiegu 
+          Zobacz jak przygotować się do zabiegu
         </StyledTitle>
-        <Button>POBIERZ</Button>
+        <a
+          href={downloadLink}
+          style={{ width: "100%", display: "flex", justifyContent: "center" }}
+          download
+        >
+          <Button>POBIERZ</Button>{" "}
+        </a>
       </ColWrapper>
-      
+      <StyledGalleryTitle style={{margin: '85px 0 30px'}}>Zobacz realizacje</StyledGalleryTitle>
+      <EyeBrowsGallery/>
+      <Link to={'/contraindications'}>
+        <Button>ZOBACZ PRZECIWSKAZANIA</Button>
+      </Link>
     </>
   );
 };

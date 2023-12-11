@@ -63,10 +63,10 @@ const Image = styled.div`
   backdrop-filter: blur(5px);
 `;
 
-export const CarouselGallery = () => {
+export const EyeBrowsGallery = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: { relativePath: { regex: "/(lipsGallery)/" } }) {
+      allFile(filter: { relativePath: { regex: "/(eyebrowsGallery)/" } }) {
         edges {
           node {
             id
@@ -94,6 +94,7 @@ export const CarouselGallery = () => {
           const imageData = getImage(image.node.childImageSharp);
           return (
             <>
+            {console.log(image)}
               {imageData && (
                 <ImageWrapper
                   onClick={() => {
