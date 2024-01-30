@@ -62,8 +62,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     <CardWrapper backgroundImage={backgroundImage}>
       <ServiceName>
         <span>{name}</span>
-        <a href={slug}>
-          <Button style={{ width: "300px" }}>WIĘCEJ</Button>
+        <a href={slug} style={{zIndex: '99'}}>
+          <Button style={{ width: "300px" }}>WIĘCEJ </Button>
         </a>
       </ServiceName>
     </CardWrapper>

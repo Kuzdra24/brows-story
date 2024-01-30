@@ -8,6 +8,7 @@ import qm from "../../assets/icons/questionMark.png";
 import { ServiceImage } from "../../components/Services/ServiceImage";
 import lifting from "../../assets/images/services/lifting.jpeg";
 import henna from "../../assets/images/services/henna.jpeg";
+import laminacja from "../../assets/images/services/laminacja.jpg";
 import { Gallery } from "../../components/Gallery/Gallery";
 import useElementVisibility from "../../hooks/useElementVisibility";
 
@@ -163,7 +164,7 @@ const IndexPage: React.FC = () => {
             {t("services.laminacja.description.2")}
           </p>
         </Description>
-        <ServiceImage imgSource={henna} alt="henna" />
+        <ServiceImage imgSource={laminacja} alt="henna" />
       </SectionWrapper>
 
       <SectionWrapper id="gallery-title" style={{ flexDirection: "column" }}>

@@ -7,11 +7,13 @@ export const Button = styled.button`
     border: 1px solid ${({theme}) => theme.colors.dark};
     border-radius: 30px;
     padding: 15px 0;
+    color: ${({theme}) => theme.colors.dark};
     cursor: pointer;
     font-size: ${({theme})=> theme.fontSizes.xs};
     letter-spacing: 2px;
     transition: ease-in-out .3s;
     margin: 15px;
+    
     &:after{
         content: ''
     }

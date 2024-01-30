@@ -2,24 +2,17 @@ import React, { useState } from "react";
 import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { useStaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
+import { useSnapCarousel } from "react-snap-carousel";
 
 const GalleryWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  max-width: 1000px;
+  width: 100%;
   height: 300px;
   margin-bottom: 100px;
-  @media (max-width: 726px) {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
-
 interface ImageNode {
   node: {
     childImageSharp: {
@@ -34,6 +27,19 @@ const ImageWrapper = styled.div`
   height: 250px;
   margin: 6px;
   overflow: hidden;
+`;
+
+const GalleryButton = styled.button`
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  color: ${({ theme }) => theme.colors.primary};
+  font-family: monospace;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 9;
 `;
 
 const StyledImage = styled(GatsbyImage)`
@@ -86,30 +92,47 @@ export const EyeBrowsGallery = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState<any>();
 
+  const { scrollRef, prev, next } = useSnapCarousel();
+
   const imageList: ImageNode[] = data.allFile.edges;
   return (
     <>
       <GalleryWrapper>
-        {imageList.map((image, index) => {
-          const imageData = getImage(image.node.childImageSharp);
-          return (
-            <>
-            {console.log(image)}
-              {imageData && (
-                <ImageWrapper
-                  onClick={() => {
-                    setIsOpen(true);
-                    setCurrentImage(imageData);
-                  }}
-                  key={index}
-                  
-                >
-                  <StyledImage image={imageData} alt={`Image ${index}`} />
-                </ImageWrapper>
-              )}
-            </>
-          );
-        })}
+        <GalleryButton onClick={(): void => prev()} style={{ left: "0" }}>
+          {"<"}
+        </GalleryButton>
+        <ul
+          ref={scrollRef}
+          style={{
+            display: "flex",
+            overflow: "auto",
+            scrollSnapType: "x mandatory",
+            overflowX: "hidden",
+           
+          }}
+        >
+          {imageList.map((image, index) => {
+            const imageData = getImage(image.node.childImageSharp);
+            return (
+              <li style={{ listStyle: "none" }}>
+                {imageData && (
+                  <ImageWrapper
+                    onClick={() => {
+                      setIsOpen(true);
+                      setCurrentImage(imageData);
+                    }}
+                    key={index}
+                  >
+                    <StyledImage image={imageData} alt={`Image ${index}`} />
+                  </ImageWrapper>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+        <GalleryButton onClick={(): void => next()} style={{ right: "0" }}>
+          {">"}
+        </GalleryButton>
       </GalleryWrapper>
 
       {isOpen && (
