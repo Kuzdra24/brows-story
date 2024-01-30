@@ -78,6 +78,7 @@ export default function PriceList() {
     { product: t("pricelist.rest.0"), price: "35€" },
     { product: t("pricelist.rest.1"), price: "40€" },
     { product: t("pricelist.rest.2"), price: "40€" },
+    { product: t("pricelist.rest.3"), price: "15€" },
   ];
 
   return (

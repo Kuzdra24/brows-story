@@ -12,7 +12,7 @@
   },
   "subtitle": "Być pięknym to być sobą. <br /> Nie musisz być akceptowany przez innych. <br/> Musisz zaakaceptować siebie",
   "buttonAction": "ZOBACZ USŁUGI",
-  "aboutDescription": "Nazywam się Anna Naściuk. Jestem linergistka zajmująca się makijażom permanentnym od 2021 roku. Jest to nie tylko moja praca ,ale również pasja. Uważam ,ze rozwój osobisty jest podstawa każdego biznesu ,dlatego systematycznie uczęszczam na szkolenia prowadzone przez najlepszych szkoleniowców ,by na bieżąco szlifować swój warsztat. Jestem tu dla Was i pragnę sprostać Waszym oczekiwaniom. Moim zadaniem jest podkreślenie urody kobiet tak,aby uzyskać możliwie naturalny efekt. W pracy z klientem cenie sobie ponad wszystko szczerość oraz profesjonalizm. Dołożę wszelkich starań, abyś podczas zabiegu czuła się zaopiekowana na każdej płaszczyźnie. W swoją prace wkładam całe serce,dlatego każdy sukces daje mi ogromna radość i satysfakcję.",
+  "aboutDescription": "Nazywam się Anna Naściuk. Jestem linergistką zajmującą się makijażem permanentnym od 2021 roku. Jest to nie tylko moja praca, ale również pasja. Uważam, że rozwój osobisty jest podstawą każdego biznesu, dlatego systematycznie uczęszczam na szkolenia prowadzone przez najlepszych szkoleniowców, by na bieżąco szlifować swój warsztat. Jestem tu dla Was i pragnę sprostać Waszym oczekiwaniom. Moim zadaniem jest podkreślenie urody kobiet tak, aby uzyskać możliwie naturalny efekt. W pracy z klientem cenie sobie ponad wszystko szczerość oraz profesjonalizm. Dołożę wszelkich starań, abyś podczas zabiegu czuła się zaopiekowana na każdej płaszczyźnie. W swoją prace wkładam całe serce, dlatego każdy sukces daje mi ogromną radość i satysfakcję.",
   "contact": ["Rezerwacje w naszym salonie dokonujesz przez media społecznościowe.",
     "Wybierz ulubiony komunikator i skontaktuj się z nami, by umówić wizytę.",
     "Wspólnie ustalimy dogodny termin oraz odpowiemy na wszystkie pytania."
@@ -45,6 +45,6 @@
     "browsServices": ["makijaż permanentny brwi", "dopigmentowanie (do 3 miesiecy)", "dopigmentowanie po czasie"],
     "mouth": "usta",
     "mouthServices": ["makijaż permamentny ust", "dopigmentowanie (do 3 miesiecy)"],
-    "rest": ["henna pudrowa", "laminacja brwi z farbka", "lifting"]
+    "rest": ["henna pudrowa", "laminacja brwi z farbka", "lifting", "regulacja brwi (pęseta + ciepły wosk)"]
   }
 }
