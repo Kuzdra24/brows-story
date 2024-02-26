@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "../UI/Button";
+import { useTranslation } from "react-i18next";
 
 interface CardWrapperProps {
   backgroundImage: string;
@@ -34,7 +35,7 @@ const ServiceName = styled.div`
   margin-top: auto;
   background-color: #ffffff55;
   width: 100%;
-  height: 100px;
+  height: 120px;
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
@@ -43,6 +44,7 @@ const ServiceName = styled.div`
   padding: 20px 0;
   span {
     font-family: cinzel;
+    text-align: center;
     font-size: ${({ theme }) => theme.fontSizes.xl};
   }
 `;
@@ -58,12 +60,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   backgroundImage,
   slug,
 }) => {
+  const { t } = useTranslation();
   return (
     <CardWrapper backgroundImage={backgroundImage}>
       <ServiceName>
         <span>{name}</span>
         <a href={slug} style={{zIndex: '99'}}>
-          <Button style={{ width: "300px" }}>WIĘCEJ </Button>
+          <Button style={{ width: "300px" }}>{t("more")}</Button>
         </a>
       </ServiceName>
     </CardWrapper>

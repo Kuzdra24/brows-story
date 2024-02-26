@@ -17,6 +17,8 @@
     "Wybierz ulubiony komunikator i skontaktuj się z nami, by umówić wizytę.",
     "Wspólnie ustalimy dogodny termin oraz odpowiemy na wszystkie pytania."
   ],
+  "more": "Więcej",
+  "realizations": "Zobacz realizacje",
   "services": {
     "lifting": {
       "title": "Co to jest lifting rzęs",
@@ -28,13 +30,15 @@
     },
     "laminacja": {
       "title": "Na czym polega zabieg laminacji brwi",
-      "description": ["Nie każda z nas zostałą obdarowana gęstymi, krzaczastymi brwiami. Włoski rosną nie tak jak byśmy chciały, niekiedy pojawiają się ubytki i nie jesteśmy w stanie ich ładnie wystylizować.", "Laminowanie brwi to zabieg,", "który pozwala nam unieść naturalne włoski, aby uzyskać pełne, gęste brwi. Polega na wyprostowaniu i uniesieniu włosków za pomocą specjalnego preparatu, który zapewnia włoskom większą elastyczność i umożliwia nadanie im pożądanego kształtu, a tym samym zakryje wszelkie luki i odstające włoski."]
-    }
+      "description": ["Nie każda z nas zostałą obdarowana gęstymi, krzaczastymi brwiami. Włoski rosną nie tak jak byśmy chciały, niekiedy pojawiają się ubytki i nie jesteśmy w stanie ich ładnie wystylizować.", "Laminowanie brwi to zabieg,", " który pozwala nam unieść naturalne włoski, aby uzyskać pełne, gęste brwi. Polega na wyprostowaniu i uniesieniu włosków za pomocą specjalnego preparatu, który zapewnia włoskom większą elastyczność i umożliwia nadanie im pożądanego kształtu, a tym samym zakryje wszelkie luki i odstające włoski."]
+    },
+    "lips": "Usta permanentne",
+    "brows": "Brwi pemanentne"
   },
   "brows": {
     "whatIsItTitle": "Co to jest <br/> Makijaż permanentny brwi",
     "whatIsItDescription": ["Kształt brwi to jeden z najbardziej wyrazistych elementów twarzy. Ich odpowiednia stylizacja może subtelnie podkreślić wygląd twarzy oraz zatuszować naturalną asymetrię.",
-      "MAKIJAŻ PRMAMENTNY BRWI - to specjalistyczny zabieg kosmetyczny, który pozwala uzyskać naturalne efekty poprawy kształtu, zagęszczenia i wyraźniejszego zarysowania brwi. Pigment wprowadzany jest na odpowiednią głębokość skury jednorazową igłą.",
+      "MAKIJAŻ PERMANENTNY BRWI - to specjalistyczny zabieg kosmetyczny, który pozwala uzyskać naturalne efekty poprawy kształtu, zagęszczenia i wyraźniejszego zarysowania brwi. Pigment wprowadzany jest na odpowiednią głębokość skury jednorazową igłą.",
       "W odróżnieniu od starszych metod makijażu permamentnego, które oferowały trwałość na całe życie, ale często prowadziły do niekorzystnych odbarwień i braku możliwości zmiany kształtu, nowoczesny makijaż wykonywany w Brows Story, ma na celu uzyskanie jak najbardziej naturalnego efektu by podkreślić urodę klientki, odkryciu jej piękna i pewności siebie każdego dnia."
     ],
     "howLongTitle": "Jak długo utrzybuje się efekt zabiegu?",
@@ -44,7 +48,7 @@
     "brows": "brwi",
     "browsServices": ["makijaż permanentny brwi", "dopigmentowanie (do 3 miesiecy)", "dopigmentowanie po czasie"],
     "mouth": "usta",
-    "mouthServices": ["makijaż permamentny ust", "dopigmentowanie (do 3 miesiecy)"],
+    "mouthServices": ["makijaż permanentny ust", "dopigmentowanie (do 3 miesiecy)"],
     "rest": ["henna pudrowa", "laminacja brwi z farbka", "lifting", "regulacja brwi (pęseta + ciepły wosk)"]
   }
 }

@@ -10,26 +10,30 @@
     },
     "prices": "Preise"
   },
-  "subtitle": "Schön sein bedeutet, man selbst zu sein. <br /> Du musst nicht von anderen akzeptiert werden. <br/> Du musst dich selbst akzeptieren.",
+  "subtitle": "Schön sein, ist Selbst zu sein <br /> Du musst nicht von anderen akzeptiert werden <br/> Du musst dich selbst akzeptieren",
   "buttonAction": "DIENSTLEISTUNGEN ANSEHEN",
-  "aboutDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor orci in tortor fermentum, vel tempor risus lacinia. Sed dictum ex at ex convallis, a luctus dolor tristique. Nulla ut velit rutrum, volutpat purus non, tristique odio. Integer ut nisl in mi dapibus volutpat. In pulvinar magna non ligula consequat, sed finibus ex lacinia. Fusce a diam nec odio congue dictum. Morbi eget ullamcorper mi. Duis sodales mauris nec Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor orci in tortor fermentum, vel tempor risus lacinia. Sed dictum ex at ex convallis, a luctus dolor tristique. Nulla ut velit rutrum.",
-  "contact": ["Termine in unserem Salon können über soziale Medien vereinbart werden.",
-    "Wählen Sie Ihren bevorzugten Messenger und kontaktieren Sie uns, um einen Termin zu vereinbaren.",
-    "Gemeinsam werden wir einen passenden Termin finden und alle Ihre Fragen beantworten."
+  "aboutDescription": "Mein Name ist Anna Naściuk. Ich bin Linergistin und beschäftige mich seit 2021 mit Permanent Make-up. Es ist nicht nur mein Beruf, sondern auch meine Leidenschaft. Ich glaube, dass die persönliche Entwicklung die Grundlage jeder Tätigkeit ist. Deshalb besuche ich systematisch Schulungen bei den besten Ausbildern, um mein Handwerk ständig zu verfeinern. Ich bin für Sie da, und ich möchte Ihre Erwartungen erfüllen. Meine Aufgabe ist es, die Schönheit der Frauen zu unterstreichen, um einen möglichst natürlichen Effekt zu erzielen. Bei der Arbeit mit meinen Kunden sind mir Ehrlichkeit und Professionalität besonders wichtig. Ich werde mein Bestes tun, damit Sie sich während der Behandlung in jeder Hinsicht gut aufgehoben fühlen. Ich stecke mein ganzes Herz in meine Arbeit, daher bereitet mir jeder Erfolg große Freude und Zufriedenheit.",
+  "contact": ["Die Buchungen in unserem Salon werden über die sozialen Medien vorgenommen.",
+    "Wählen Sie Ihren Lieblings-Messenger und kontaktieren Sie uns, um einen Termin zu vereinbaren.",
+    "Gemeinsam vereinbaren wir einen passenden Termin und beantworten alle Ihre Fragen."
   ],
+  "more":"mehr",
+  "realizations": "Siehe Referenzen",
   "services": {
     "lifting": {
-      "title": "Was ist Wimpernlifting?",
-      "description": ["Wimpernlifting ist eine Behandlung zum Anheben und Kräuseln der Wimpern, die einen", "natürlichen und langanhaltenden Effekt erzielt.", "Ein natürlicher Look der Wimpern befriedigt nicht immer Frauen, die nach einem intensiven und ausdrucksstarken Blick suchen. Wimpern sind oft dünn, hell und wachsen gerade anstatt dicht und schwungvoll gekräuselt zu sein. Für Frauen, die einen natürlichen, aber sichtbaren Effekt wünschen, empfiehlt sich eine Behandlung mit Wimpernlifting oder Wimpernlaminierung."]
+      "title": "Was ist ein Wimpernlifting?",
+      "description": ["Bei einem Wimpernlifting werden die Wimpern geliftet und geschwungen, um einen", "natürlichen, dauerhaften Effekt zu erzielen.", "Das natürliche Aussehen der Wimpern befriedigt nicht immer Frauen, die sich einen intensiven, ausdrucksstarken Blick wünschen. Oft sind die Wimpern spärlich, hell und wachsen in einer geraden Linie, anstatt dicht und kokett geschwungen zu sein. Für Frauen, die einen natürlichen, aber sichtbaren Effekt wünschen, empfiehlt sich eine Wimpernlifting-/Laminierungsbehandlung."]
     },
     "henna": {
-      "title": ["Was ist Pudrige Henna und für wen ist es geeignet?"],
-      "description": ["Brow Henna, auch bekannt als pudrige Henna, ist eine innovative und natürliche Methode zur Färbung von Härchen und Haut in die gewünschte Farbe. Es handelt sich um ein natürliches Produkt auf pflanzlicher Basis, das die Haare und die Haut neben dem Färbeeffekt auch pflegt und glänzend macht.", "Die Behandlung richtet sich an Personen,", "die ihren natürlichen Augenbrauenform betonen, Lücken füllen, ihre Haare pflegen oder die Farbe des Permanent-Make-ups auffrischen möchten."]
+      "title": ["Was ist Hennapulver", "und für wen"],
+      "description": ["Augenbrauen-Henna oder Hennapulver ist eine innovative und natürliche Methode zum Färben von Haaren und Haut in der gewünschten Farbe. Es handelt sich um ein natürliches Präparat auf pflanzlicher Basis, das Haut und Haare nicht nur färbt, sondern auch pflegt und glänzt. ", "Die Behandlung ist für", "all diejenigen gedacht, die die natürliche Form ihrer Augenbrauen betonen, Lücken auffüllen, ihr Haar pflegen oder die Farbe eines Permanent Make-up auffrischen möchten. "]
     },
     "laminacja": {
-      "title": "Was ist Augen - brauenlaminierung",
-      "description": ["Nicht jede von uns wurde mit dichten, buschigen Augenbrauen gesegnet. Haare wachsen nicht immer so, wie wir es gerne hätten, manchmal gibt es Lücken und störrische Haare, die sich nicht gut stylen lassen.", "Augenbrauenlaminierung ist eine Behandlung,", "die es uns ermöglicht, natürliche Haare anzuheben, um volle, dichte Augenbrauen zu erhalten. Sie besteht darin, die Haare mit Hilfe eines speziellen Präparats zu glätten und anzuheben, das den Haaren mehr Elastizität verleiht und es ermöglicht, die gewünschte Form zu geben und damit Lücken und abstehende Haare zu bedecken."]
-    }
+      "title": "Was ist eine Augenbrauenlaminierung?",
+      "description": ["Nicht alle sind mit dichten, buschigen Augenbrauen gesegnet. Die Härchen wachsen nicht so, wie wir sie gerne hätten, manchmal gibt es Lücken und wir können sie nicht schön stylen.", "Die Augenbrauenkaschierung ist ein Verfahren,", " mit dem wir die natürlichen Härchen anheben können, um volle, dichte Augenbrauen zu erhalten. Dabei werden die Härchen mit einem speziellen Produkt geglättet und angehoben, das ihnen mehr Elastizität verleiht und es ihnen ermöglicht, die gewünschte Form anzunehmen und so Lücken und Kräuselungen zu überdecken. "]
+    },
+    "lips": "Permanentes Lippen",
+    "brows": "Permanentes Augenbrauen"
   },
   "brows": {
     "whatIsItTitle": "Was ist Permanent-Make-up für Augenbrauen?",
