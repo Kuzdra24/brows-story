@@ -86,7 +86,7 @@ export default function contraindications() {
 
   return (
     <Wrapper>
-      <StyledTitle style={{ textAlign: "center" }} imgSrc={x}>
+      <StyledTitle style={{ textAlign: "center", fontSize: "29px"}} imgSrc={x}>
         {t("contraindications")}
       </StyledTitle>
       <ul>
