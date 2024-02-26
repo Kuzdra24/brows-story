@@ -10,41 +10,87 @@
     },
     "prices": "Preise"
   },
-  "subtitle": "Schön sein bedeutet, man selbst zu sein. <br /> Du musst nicht von anderen akzeptiert werden. <br/> Du musst dich selbst akzeptieren.",
+  "subtitle": "Schön sein, ist Selbst zu sein <br /> Du musst nicht von anderen akzeptiert werden <br/> Du musst dich selbst akzeptieren",
   "buttonAction": "DIENSTLEISTUNGEN ANSEHEN",
-  "aboutDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor orci in tortor fermentum, vel tempor risus lacinia. Sed dictum ex at ex convallis, a luctus dolor tristique. Nulla ut velit rutrum, volutpat purus non, tristique odio. Integer ut nisl in mi dapibus volutpat. In pulvinar magna non ligula consequat, sed finibus ex lacinia. Fusce a diam nec odio congue dictum. Morbi eget ullamcorper mi. Duis sodales mauris nec Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor orci in tortor fermentum, vel tempor risus lacinia. Sed dictum ex at ex convallis, a luctus dolor tristique. Nulla ut velit rutrum.",
-  "contact": ["Termine in unserem Salon können über soziale Medien vereinbart werden.",
-    "Wählen Sie Ihren bevorzugten Messenger und kontaktieren Sie uns, um einen Termin zu vereinbaren.",
-    "Gemeinsam werden wir einen passenden Termin finden und alle Ihre Fragen beantworten."
+  "aboutDescription": "Mein Name ist Anna Naściuk. Ich bin Linergistin und beschäftige mich seit 2021 mit Permanent Make-up. Es ist nicht nur mein Beruf, sondern auch meine Leidenschaft. Ich glaube, dass die persönliche Entwicklung die Grundlage jeder Tätigkeit ist. Deshalb besuche ich systematisch Schulungen bei den besten Ausbildern, um mein Handwerk ständig zu verfeinern. Ich bin für Sie da, und ich möchte Ihre Erwartungen erfüllen. Meine Aufgabe ist es, die Schönheit der Frauen zu unterstreichen, um einen möglichst natürlichen Effekt zu erzielen. Bei der Arbeit mit meinen Kunden sind mir Ehrlichkeit und Professionalität besonders wichtig. Ich werde mein Bestes tun, damit Sie sich während der Behandlung in jeder Hinsicht gut aufgehoben fühlen. Ich stecke mein ganzes Herz in meine Arbeit, daher bereitet mir jeder Erfolg große Freude und Zufriedenheit.",
+  "contact": ["Die Buchungen in unserem Salon werden über die sozialen Medien vorgenommen.",
+    "Wählen Sie Ihren Lieblings-Messenger und kontaktieren Sie uns, um einen Termin zu vereinbaren.",
+    "Gemeinsam vereinbaren wir einen passenden Termin und beantworten alle Ihre Fragen."
   ],
+  "more": "MEHR",
+  "realizations": "Siehe Referenzen",
+  "download": "HERUNTERLADEN",
+  "contraindications": "Kontraindikationen",
   "services": {
     "lifting": {
-      "title": "Was ist Wimpernlifting?",
-      "description": ["Wimpernlifting ist eine Behandlung zum Anheben und Kräuseln der Wimpern, die einen", "natürlichen und langanhaltenden Effekt erzielt.", "Ein natürlicher Look der Wimpern befriedigt nicht immer Frauen, die nach einem intensiven und ausdrucksstarken Blick suchen. Wimpern sind oft dünn, hell und wachsen gerade anstatt dicht und schwungvoll gekräuselt zu sein. Für Frauen, die einen natürlichen, aber sichtbaren Effekt wünschen, empfiehlt sich eine Behandlung mit Wimpernlifting oder Wimpernlaminierung."]
+      "title": "Was ist ein Wimpernlifting?",
+      "description": ["Bei einem Wimpernlifting werden die Wimpern geliftet und geschwungen, um einen", "natürlichen, dauerhaften Effekt zu erzielen.", "Das natürliche Aussehen der Wimpern befriedigt nicht immer Frauen, die sich einen intensiven, ausdrucksstarken Blick wünschen. Oft sind die Wimpern spärlich, hell und wachsen in einer geraden Linie, anstatt dicht und kokett geschwungen zu sein. Für Frauen, die einen natürlichen, aber sichtbaren Effekt wünschen, empfiehlt sich eine Wimpernlifting-/Laminierungsbehandlung."]
     },
     "henna": {
-      "title": ["Was ist Pudrige Henna und für wen ist es geeignet?"],
-      "description": ["Brow Henna, auch bekannt als pudrige Henna, ist eine innovative und natürliche Methode zur Färbung von Härchen und Haut in die gewünschte Farbe. Es handelt sich um ein natürliches Produkt auf pflanzlicher Basis, das die Haare und die Haut neben dem Färbeeffekt auch pflegt und glänzend macht.", "Die Behandlung richtet sich an Personen,", "die ihren natürlichen Augenbrauenform betonen, Lücken füllen, ihre Haare pflegen oder die Farbe des Permanent-Make-ups auffrischen möchten."]
+      "title": ["Was ist Hennapulver", "und für wen"],
+      "description": ["Augenbrauen-Henna oder Hennapulver ist eine innovative und natürliche Methode zum Färben von Haaren und Haut in der gewünschten Farbe. Es handelt sich um ein natürliches Präparat auf pflanzlicher Basis, das Haut und Haare nicht nur färbt, sondern auch pflegt und glänzt. ", "Die Behandlung ist für", "all diejenigen gedacht, die die natürliche Form ihrer Augenbrauen betonen, Lücken auffüllen, ihr Haar pflegen oder die Farbe eines Permanent Make-up auffrischen möchten. "]
     },
     "laminacja": {
-      "title": "Was ist Augen - brauenlaminierung",
-      "description": ["Nicht jede von uns wurde mit dichten, buschigen Augenbrauen gesegnet. Haare wachsen nicht immer so, wie wir es gerne hätten, manchmal gibt es Lücken und störrische Haare, die sich nicht gut stylen lassen.", "Augenbrauenlaminierung ist eine Behandlung,", "die es uns ermöglicht, natürliche Haare anzuheben, um volle, dichte Augenbrauen zu erhalten. Sie besteht darin, die Haare mit Hilfe eines speziellen Präparats zu glätten und anzuheben, das den Haaren mehr Elastizität verleiht und es ermöglicht, die gewünschte Form zu geben und damit Lücken und abstehende Haare zu bedecken."]
-    }
+      "title": "Was ist eine Augenbrauenlaminierung?",
+      "description": ["Nicht alle sind mit dichten, buschigen Augenbrauen gesegnet. Die Härchen wachsen nicht so, wie wir sie gerne hätten, manchmal gibt es Lücken und wir können sie nicht schön stylen.", "Die Augenbrauenkaschierung ist ein Verfahren,", " mit dem wir die natürlichen Härchen anheben können, um volle, dichte Augenbrauen zu erhalten. Dabei werden die Härchen mit einem speziellen Produkt geglättet und angehoben, das ihnen mehr Elastizität verleiht und es ihnen ermöglicht, die gewünschte Form anzunehmen und so Lücken und Kräuselungen zu überdecken. "]
+    },
+    "lips": "Permanentes Lippen",
+    "brows": "Permanentes Augenbrauen"
   },
   "brows": {
-    "whatIsItTitle": "Was ist Permanent-Make-up für Augenbrauen?",
-    "whatIsItDescription": ["Die Form der Augenbrauen ist eines der markantesten Merkmale im Gesicht. Die richtige Gestaltung kann das Erscheinungsbild des Gesichts subtil betonen und natürliche Asymmetrien kaschieren.",
-      "Permanent-Make-up für Augenbrauen ist eine spezialisierte kosmetische Behandlung, die natürliche Effekte zur Verbesserung von Form, Dichte und Kontur der Augenbrauen ermöglicht. Der Farbstoff wird mit einer Einwegnadel in die Haut eingeführt.",
-      "Im Gegensatz zu älteren Methoden des Permanent-Make-ups, die lebenslange Haltbarkeit boten, jedoch oft zu unerwünschten Verfärbungen und mangelnder Möglichkeit zur Änderung der Form führten, zielt modernes Permanent-Make-up von Brows Story darauf ab, einen möglichst natürlichen Effekt zu erzielen, um die Schönheit unserer Kunden zu betonen und ihnen Selbstvertrauen für jeden Tag zu schenken."
+    "whatIsItTitle": "Was es ist Permanentes Augenbrauen-Make-up?",
+    "whatIsItDescription": ["Die Form der Augenbrauen ist eines der ausdrucksstärksten Elemente des Gesichts. Ihr angemessenes Styling kann das Aussehen des Gesichts subtil unterstreichen und natürliche Asymmetrien kaschieren. ",
+      "EYEBROW PRIMARY MAINTENANCE - ist ein spezielles kosmetisches Verfahren, das es ermöglicht, die Form der Augenbrauen auf natürliche Weise zu verbessern, sie zu verdichten und klarer zu konturieren. Das Pigment wird mit einer Einwegnadel in die entsprechende Hauttiefe eingebracht. ",
+      "Im Gegensatz zu den älteren Methoden des Permanent-Make-ups, die zwar lebenslang haltbar waren, aber oft zu ungünstigen Verfärbungen und zur Unfähigkeit, die Form zu verändern, führten, zielt das moderne Make-up, das bei Brows Story durchgeführt wird, darauf ab, einen möglichst natürlichen Effekt zu erzielen, um die Schönheit der Kundin zu unterstreichen und ihre Schönheit und ihr Selbstbewusstsein jeden Tag aufs Neue zum Vorschein zu bringen."
+    ],
+    "howLongTitle": "Wie lange hält die Wirksamkeit der Behandlung an?",
+    "howLongDescription": ["Die Frage, wie lange Permament-Make-up hält, stellen sich viele Frauen, die eine Behandlung planen. Leider ist die Antwort nicht eindeutig, denn die Wirkung hängt von vielen Faktoren ab. Zu berücksichtigen sind u. a. Gesundheitszustand, Vorerkrankungen, eingenommene Medikamente, Alter, Hauttyp und Hautbeschaffenheit sowie die tägliche Hautpflege. ",
+      "Aufgrund verschiedener Aspekte kann die Wirkung eines dauerhaften Augenbrauen-Make- ups ein Jahr, in manchen Fällen sogar 2-4 Jahre anhalten. ",
+      "In den meisten Fällen sind es etwa 2 Jahre."
+    ],
+    "forWhoTitle": "Für wen ist Permanent Make-up?",
+    "forWhoDescription": ["Das Augenbrauen-Permanent-Make-up ist vor allem für Damen zu empfehlen, die Wert auf Zeit und Bequemlichkeit legen. Wenn Sie das mühsame Augenbrauen-Make-up nicht mögen oder einfach keine Zeit dafür haben, ist das Permanent-Make-up eine ausgezeichnete Wahl. ",
+      "Hier sind einige Fälle, in denen diese Lösung besonders vorteilhaft ist:",
+      "Menschen mit spärlichen oder ungleichmäßig wachsenden Augenbrauen",
+      "Menschen, die aufgrund von Krankheiten oder Therapien mit Haarausfall zu kämpfen haben",
+      "Menschen mit hellen Augenbrauen, die ein definierteres Aussehen wünschen",
+      "Körperlich aktive Menschen, die vermeiden wollen, dass das Make-up beim Sport verschmiert"
+    ],
+    "howToPrepare": "Sehen Sie, wie Sie sich auf die Behandlung vorbereiten"
+  },
+  "lips": {
+    "whatIsItTitle": ["Was ist", "Permanentes Lippen-Make-up"],
+    "whatIsItDescription": ["Es gibt wohl keine Frau, die sich nicht ein lang anhaltendes und perfektes Lippen-Make-up wünschen würde, ohne dabei Lippenstift zu verwenden.",
+      "Das pernamentale Lippen-Make-up ist eine fortschrittliche Pigmentierungsmethode, bei der ein entsprechend ausgewähltes Pigment in die Rötung der Lippen eingebracht wird. Das Ziel dieser Technik ist es, die natürliche Schönheit der Lippen zu betonen und gleichzeitig ein lang anhaltendes Ergebnis zu erzielen. ",
+      "Die Wirkung hält etwa zwei Jahre lang an, ist aber stark von individuellen Faktoren abhängig, die die Dauerhaftigkeit der Behandlung beeinflussen."
+    ],
+    "forWhoTitle": "Die Behandlung richtet sich an...",
+    "forWhoDescription": ["Menschen, die blasse, schlecht durchblutete Lippen haben, und solche, deren Lippen schmal und klein sind, mit unregelmäßigen Konturen, verursacht durch Herpes- oder Akneläsionen.",
+      "Menschen, die Zeit sparen wollen, indem sie auf das tägliche Lippen-Make-up verzichten",
+      "Menschen mit Narben oder Deformierungen, die diese minimieren möchten",
+      "ALLE, die ein natürliches, aber dauerhaftes Lippen-Make-up wünschen, das ihre Schönheit unterstreicht und ihr Selbstvertrauen stärkt"
+    ],
+    "yourVisitTitle": "Ihr Besuch im Salon",
+    "step": "SCHRITT",
+    "yourVisitDescription": ["Wir gehen gemeinsam die Kontraindikationen durch. Ich empfehle Ihnen, Ihren Lieblingslippenstift mitzubringen, wir sprechen über Ihre Vorlieben und Erwartungen, die wir gemeinsam erfüllen werden.",
+    "Die Formgebung",  
+    "Sie sehen nun eine Visualisierung der Veränderung, eine Vorzeichnung des pernamentalen Lippen-Make-ups. Anhand der vermessenen Punkte Ihres Gesichts bestimme ich die ideale Form für Sie. Die Behandlung wird erst nach Ihrer Zustimmung zur Zeichnung durchgeführt. Ich wähle die optimale Farbe auf der Grundlage Ihrer Vorlieben. ",
+    "Ich konturiere die Lippen und fülle sie dann mit Farbe auf. Die Lippenpigmentierung dauert je nach Größe 40-80 Minuten."
+    ],
+    "howToPrepareTitle": "So bereiten Sie sich auf die Behandlung vor",
+    "howToPrepareDescription": ["Pflegen Sie Ihre Lippen gut, damit sie weich, geschmeidig und mit Feuchtigkeit versorgt bleiben.",
+      "Verzichten Sie etwa 48 Stunden vor dem Eingriff auf Alkohol und blutverdünnende Medikamente, um das Risiko von Blutungen und Schwellungen zu minimieren.",
+      "Achten Sie auf eine gute Flüssigkeitszufuhr",
+      "Vermeiden Sie Sonnenbäder oder Solarien, um Hautreizungen bei Pigmentverschiebungen zu vermeiden."
     ]
   },
-  "howLongTitle": "Wie lange hält der Effekt der Behandlung an?",
-  "forWhoTitle": "Für wen ist Permanent-Make-up geeignet?",
   "pricelist": {
     "brows": "Augenbrauen",
-    "browsServices": ["Permanent Make-up für Augenbrauen", "Nachpigmentierung (bis zu 3 Monate)", "Nachpigmentierung nach längerer Zeit"],
+    "browsServices": ["Permanent Make-up für Augenbrauen", "Nachpigmentierung (bis zu 3 Monate)", "Nachpigmentierung"],
     "mouth": "Lippen",
-    "mouthServices": ["Permanent Make-up für Lippen", "Nachpigmentierung (bis zu 3 Monate)"],
-    "rest": ["Puder-Henna", "Augenbrauenlaminierung mit Farbe", "Wimpernlifting"]
+    "mouthServices": ["Permanentes Lippen-Make-up", "Nachpigmentierung (bis zu 3 Monate)"],
+    "browsStyle": "Augenbrauen-Styling",
+    "rest": ["Puder-Henna", "Augenbrauenlaminierung mit Farbe", "Wimpernlifting"],
+    "desc": ["Auffrischung des Permanent-Make-ups bei ", "Brows Story Anna Nasciuk bis zu 1 Jahr -50%."]
   }
 }

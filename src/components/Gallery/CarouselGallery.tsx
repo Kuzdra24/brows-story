@@ -113,7 +113,7 @@ export const CarouselGallery = () => {
           {imageList.map((image, index) => {
             const imageData = getImage(image.node.childImageSharp);
             return (
-              <li style={{ listStyle: "none" }}>
+              <li style={{ listStyle: "none" }} key={index}>
                 {imageData && (
                   <ImageWrapper
                     onClick={() => {

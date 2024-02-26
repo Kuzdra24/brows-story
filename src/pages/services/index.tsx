@@ -116,12 +116,12 @@ const IndexPage: React.FC = () => {
     <>
       <Wrapper>
         <ServiceCard
-          name={"Brwi permanentne"}
+          name={t("services.brows")}
           backgroundImage={eyeBrowsSrc}
           slug="/services/eyebrows"
         />
         <ServiceCard
-          name={"Usta permanentne"}
+          name={t("services.lips")}
           backgroundImage={mouthSrc}
           slug="/services/mouth"
         />
@@ -132,7 +132,7 @@ const IndexPage: React.FC = () => {
           <p>
             {t("services.lifting.description.0")}
             <mark> {t("services.lifting.description.1")} </mark>
-            <br />
+            
             {t("services.lifting.description.2")}
           </p>
         </Description>
@@ -169,7 +169,7 @@ const IndexPage: React.FC = () => {
 
       <SectionWrapper id="gallery-title" style={{ flexDirection: "column" }}>
         {isVisable && (
-          <StyledGalleryTitle>Zobacz realizacje</StyledGalleryTitle>
+          <StyledGalleryTitle>{t("realizations")}</StyledGalleryTitle>
         )}
         <Gallery />
       </SectionWrapper>

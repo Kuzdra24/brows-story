@@ -78,7 +78,7 @@ export default function PriceList() {
     { product: t("pricelist.rest.0"), price: "35€" },
     { product: t("pricelist.rest.1"), price: "40€" },
     { product: t("pricelist.rest.2"), price: "40€" },
-    { product: t("pricelist.rest.3"), price: "15€" },
+    { product: t("pricelist.rest.3"), price: "15 €" },
   ];
 
   return (
@@ -108,16 +108,16 @@ export default function PriceList() {
           ))}
         </ul>
         <hr />
-        <MenuItem style={{margin: "20px 0 40px"}}>
+        <MenuItem style={{ margin: "20px 0 40px" }}>
           <span>
-            Odswieżenie makijażu pernamentnego wykonanego w <br />
-            Brows Story Anna Nasciuk do 1 roku
+            {t("pricelist.desc.0")} <br />
+            {t("pricelist.desc.1")}
           </span>
           <strong> -50%</strong>
         </MenuItem>
-        <StyledSubtitle>Stylizacja brwi</StyledSubtitle>
+        <StyledSubtitle>{t("pricelist.browsStyle")}</StyledSubtitle>
         <ul>
-        {pricesRest.map((e) => (
+          {pricesRest.map((e) => (
             <li>
               <MenuItem>
                 <span>{e.product}</span>

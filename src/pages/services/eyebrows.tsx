@@ -1,18 +1,18 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 import styled from "styled-components";
 import qm from "../../assets/icons/questionMark.png";
 import clock from "../../assets/icons/clock.png";
 import eye from "../../assets/icons/eye.png";
 import { graphql, useStaticQuery, Link } from "gatsby";
-import {  IGatsbyImageData } from "gatsby-plugin-image";
-import {StyledImage, StyledTitle} from '../../assets/styles/styles'
+import { IGatsbyImageData } from "gatsby-plugin-image";
+import { StyledImage, StyledTitle } from "../../assets/styles/styles";
 import { Button } from "../../components/UI/Button";
 import useWidth from "../../hooks/useWidth";
 import downloadLink from "../../assets/download/how2Prepare.jpg";
 import { EyeBrowsGallery } from "../../components/Gallery/EyeBrowsGallery";
 import { StyledGalleryTitle } from "./index";
-
 
 const Wrapper = styled.section`
   display: flex;
@@ -74,7 +74,6 @@ const Wrapper = styled.section`
   }
 `;
 
-
 const ColWrapper = styled.section`
   width: 100%;
   max-width: 1200px;
@@ -120,8 +119,7 @@ const IndexPage = () => {
       <Wrapper>
         <div>
           <StyledTitle imgSrc={qm}>
-            Co to jest
-            <br /> Makijaż permanentny brwi
+            <Trans i18nKey="brows.whatIsItTitle" />
           </StyledTitle>
           <p>{t("brows.whatIsItDescription.0")} </p>
           <p>{t("brows.whatIsItDescription.1")} </p>
@@ -136,18 +134,10 @@ const IndexPage = () => {
           <StyledTitle imgSrc={clock} style={{ alignSelf: "center" }}>
             {t("brows.howLongTitle")}
           </StyledTitle>
+          <p>{t("brows.howLongDescription.0")}</p>
           <p>
-            Pytanie o to, jak długo utrzymuje się makijaż permamentny, jest
-            jednym z tych, które zadaje sobie kobieta planują ca zabieg.
-            Odpowiedź niestety nie jest jednoznaczna, bo efekt zależy od wielu
-            czynników. Należy uwzględnić m.in. stan zdrowia, przebyte choroby,
-            przyjmowane leki, wiek, rodzaj cery i typ skóry oraz codzienną
-            pielęgnację.
-          </p>
-          <p>
-            Ze względu na różne aspekty, efekt makijażu permamentnego brwi może
-            utzrymywać się przez rok, a w niektorych nawet 2-4 lata. <br />
-            <mark>W większości przypadków są to około 2 lata.</mark>
+            {t("brows.howLongDescription.1")}
+            <mark>{t("brows.howLongDescription.2")}</mark>
           </p>
         </div>
       </Wrapper>
@@ -159,47 +149,34 @@ const IndexPage = () => {
         />
         <div>
           <StyledTitle imgSrc={eye}>{t("brows.forWhoTitle")}</StyledTitle>
-          <p>
-            Makijaż permamentny brwi polecany jest przede wszystkim paniom,
-            które cenią swój czas i wygodę. Jeśli nie przepadasz za wykonywaniem
-            żmudnego makijażu brwi lub poprostu nie masz na to czasu makijaż
-            permamentny okaże się doskonałym wyborem.
-          </p>
-          <p>
-            Oto niektóre przypadki, dla których to rozwiązanie będzie
-            szczególnie korzystne:
-          </p>
+          <p>{t("brows.forWhoDescription.0")}</p>
+          <p>{t("brows.forWhoDescription.1")}</p>
           <ul>
-            <li>Osoby o rzadkich, lub nierównomiernie rosnących brwiach </li>
-            <li>
-              Osoby borykające się z utratą włosków w wyniku chorób, terapii{" "}
-            </li>
-            <li>
-              Osoby o jasnych brwiach, chcące uzyskać bardziej wyrazisty wygląd{" "}
-            </li>
-            <li>
-              Osoby aktywne fizycznie, które chcą uniknąć rozmywania się
-              makijażu podczas ćwiczeń
-            </li>
+            <li>{t("brows.forWhoDescription.2")} </li>
+            <li>{t("brows.forWhoDescription.3")}</li>
+            <li>{t("brows.forWhoDescription.4")}</li>
+            <li>{t("brows.forWhoDescription.5")}</li>
           </ul>
         </div>
       </Wrapper>
       <ColWrapper>
         <StyledTitle imgSrc={qm}>
-          Zobacz jak przygotować się do zabiegu
+          {t("brows.howToPrepare")}
         </StyledTitle>
         <a
           href={downloadLink}
           style={{ width: "100%", display: "flex", justifyContent: "center" }}
           download
         >
-          <Button>POBIERZ</Button>{" "}
+          <Button>{t("download")}</Button>
         </a>
       </ColWrapper>
-      <StyledGalleryTitle style={{margin: '85px 0 30px'}}>Zobacz realizacje</StyledGalleryTitle>
-      <EyeBrowsGallery/>
-      <Link to={'/contraindications'}>
-        <Button>ZOBACZ PRZECIWSKAZANIA</Button>
+      <StyledGalleryTitle style={{ margin: "85px 0 30px" }}>
+        {t("realizations")}
+      </StyledGalleryTitle>
+      <EyeBrowsGallery />
+      <Link to={"/contraindications"}>
+        <Button>{t("contraindications")}</Button>
       </Link>
     </>
   );
