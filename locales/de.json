@@ -17,8 +17,10 @@
     "Wählen Sie Ihren Lieblings-Messenger und kontaktieren Sie uns, um einen Termin zu vereinbaren.",
     "Gemeinsam vereinbaren wir einen passenden Termin und beantworten alle Ihre Fragen."
   ],
-  "more":"mehr",
+  "more": "MEHR",
   "realizations": "Siehe Referenzen",
+  "download": "HERUNTERLADEN",
+  "contraindications": "Kontraindikationen",
   "services": {
     "lifting": {
       "title": "Was ist ein Wimpernlifting?",
@@ -36,14 +38,28 @@
     "brows": "Permanentes Augenbrauen"
   },
   "brows": {
-    "whatIsItTitle": "Was ist Permanent-Make-up für Augenbrauen?",
-    "whatIsItDescription": ["Die Form der Augenbrauen ist eines der markantesten Merkmale im Gesicht. Die richtige Gestaltung kann das Erscheinungsbild des Gesichts subtil betonen und natürliche Asymmetrien kaschieren.",
-      "Permanent-Make-up für Augenbrauen ist eine spezialisierte kosmetische Behandlung, die natürliche Effekte zur Verbesserung von Form, Dichte und Kontur der Augenbrauen ermöglicht. Der Farbstoff wird mit einer Einwegnadel in die Haut eingeführt.",
-      "Im Gegensatz zu älteren Methoden des Permanent-Make-ups, die lebenslange Haltbarkeit boten, jedoch oft zu unerwünschten Verfärbungen und mangelnder Möglichkeit zur Änderung der Form führten, zielt modernes Permanent-Make-up von Brows Story darauf ab, einen möglichst natürlichen Effekt zu erzielen, um die Schönheit unserer Kunden zu betonen und ihnen Selbstvertrauen für jeden Tag zu schenken."
-    ]
+    "whatIsItTitle": "Was es ist Permanentes Augenbrauen-Make-up?",
+    "whatIsItDescription": ["Die Form der Augenbrauen ist eines der ausdrucksstärksten Elemente des Gesichts. Ihr angemessenes Styling kann das Aussehen des Gesichts subtil unterstreichen und natürliche Asymmetrien kaschieren. ",
+      "EYEBROW PRIMARY MAINTENANCE - ist ein spezielles kosmetisches Verfahren, das es ermöglicht, die Form der Augenbrauen auf natürliche Weise zu verbessern, sie zu verdichten und klarer zu konturieren. Das Pigment wird mit einer Einwegnadel in die entsprechende Hauttiefe eingebracht. ",
+      "Im Gegensatz zu den älteren Methoden des Permanent-Make-ups, die zwar lebenslang haltbar waren, aber oft zu ungünstigen Verfärbungen und zur Unfähigkeit, die Form zu verändern, führten, zielt das moderne Make-up, das bei Brows Story durchgeführt wird, darauf ab, einen möglichst natürlichen Effekt zu erzielen, um die Schönheit der Kundin zu unterstreichen und ihre Schönheit und ihr Selbstbewusstsein jeden Tag aufs Neue zum Vorschein zu bringen."
+    ],
+    "howLongTitle": "Wie lange hält die Wirksamkeit der Behandlung an?",
+    "howLongDescription": ["Die Frage, wie lange Permament-Make-up hält, stellen sich viele Frauen, die eine Behandlung planen. Leider ist die Antwort nicht eindeutig, denn die Wirkung hängt von vielen Faktoren ab. Zu berücksichtigen sind u. a. Gesundheitszustand, Vorerkrankungen, eingenommene Medikamente, Alter, Hauttyp und Hautbeschaffenheit sowie die tägliche Hautpflege. ",
+      "Aufgrund verschiedener Aspekte kann die Wirkung eines dauerhaften Augenbrauen-Make- ups ein Jahr, in manchen Fällen sogar 2-4 Jahre anhalten. ",
+      "In den meisten Fällen sind es etwa 2 Jahre."
+    ],
+    "forWhoTitle": "Für wen ist Permanent Make-up?",
+    "forWhoDescription": ["Das Augenbrauen-Permanent-Make-up ist vor allem für Damen zu empfehlen, die Wert auf Zeit und Bequemlichkeit legen. Wenn Sie das mühsame Augenbrauen-Make-up nicht mögen oder einfach keine Zeit dafür haben, ist das Permanent-Make-up eine ausgezeichnete Wahl. ",
+      "Hier sind einige Fälle, in denen diese Lösung besonders vorteilhaft ist:",
+      "Menschen mit spärlichen oder ungleichmäßig wachsenden Augenbrauen",
+      "Menschen, die aufgrund von Krankheiten oder Therapien mit Haarausfall zu kämpfen haben",
+      "Menschen mit hellen Augenbrauen, die ein definierteres Aussehen wünschen",
+      "Körperlich aktive Menschen, die vermeiden wollen, dass das Make-up beim Sport verschmiert"
+    ],
+    "howToPrepare": "Sehen Sie, wie Sie sich auf die Behandlung vorbereiten"
   },
-  "howLongTitle": "Wie lange hält der Effekt der Behandlung an?",
-  "forWhoTitle": "Für wen ist Permanent-Make-up geeignet?",
+
+
   "pricelist": {
     "brows": "Augenbrauen",
     "browsServices": ["Permanent Make-up für Augenbrauen", "Nachpigmentierung (bis zu 3 Monate)", "Nachpigmentierung nach längerer Zeit"],

@@ -19,6 +19,8 @@
   ],
   "more": "Więcej",
   "realizations": "Zobacz realizacje",
+  "download": "HERUNTERLADEN",
+  "contraindications": "Przeciwskazania",
   "services": {
     "lifting": {
       "title": "Co to jest lifting rzęs",
@@ -41,8 +43,20 @@
       "MAKIJAŻ PERMANENTNY BRWI - to specjalistyczny zabieg kosmetyczny, który pozwala uzyskać naturalne efekty poprawy kształtu, zagęszczenia i wyraźniejszego zarysowania brwi. Pigment wprowadzany jest na odpowiednią głębokość skury jednorazową igłą.",
       "W odróżnieniu od starszych metod makijażu permamentnego, które oferowały trwałość na całe życie, ale często prowadziły do niekorzystnych odbarwień i braku możliwości zmiany kształtu, nowoczesny makijaż wykonywany w Brows Story, ma na celu uzyskanie jak najbardziej naturalnego efektu by podkreślić urodę klientki, odkryciu jej piękna i pewności siebie każdego dnia."
     ],
-    "howLongTitle": "Jak długo utrzybuje się efekt zabiegu?",
-    "forWhoTitle": "Dla kogo jest makijaż permanentny"
+    "howLongTitle": "Jak długo utrzymuje się efekt zabiegu?",
+    "howLongDescription": ["Pytanie o to, jak długo utrzymuje się makijaż permamentny, jest jednym z tych, które zadaje sobie kobieta planują ca zabieg. Odpowiedź niestety nie jest jednoznaczna, bo efekt zależy od wielu czynników. Należy uwzględnić m.in. stan zdrowia, przebyte choroby, przyjmowane leki, wiek, rodzaj cery i typ skóry oraz codzienną pielęgnację.",
+      "Ze względu na różne aspekty, efekt makijażu permamentnego brwi może utzrymywać się przez rok, a w niektorych nawet 2-4 lata. ",
+      "W większości przypadków są to około 2 lata"
+    ],
+    "forWhoTitle": "Dla kogo jest makijaż permanentny",
+    "forWhoDescription": ["Makijaż permamentny brwi polecany jest przede wszystkim paniom, które cenią swój czas i wygodę. Jeśli nie przepadasz za wykonywaniem żmudnego makijażu brwi lub poprostu nie masz na to czasu makijaż permamentny okaże się doskonałym wyborem. ",
+    "Oto niektóre przypadki, dla których to rozwiązanie będzie szczególnie korzystne:",
+    "Osoby o rzadkich, lub nierównomiernie rosnących brwiach",
+    "Osoby borykające się z utratą włosków w wyniku chorób, terapii",
+    "Osoby o jasnych brwiach, chcące uzyskać bardziej wyrazisty wygląd",
+    "Osoby aktywne fizycznie, które chcą uniknąć rozmywania się makijażu podczas ćwiczeń"
+  ],
+  "howToPrepare": "Zobacz jak przygotować się do zabiegu"
   },
   "pricelist": {
     "brows": "brwi",
