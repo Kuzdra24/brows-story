@@ -50,19 +50,47 @@
     ],
     "forWhoTitle": "Dla kogo jest makijaż permanentny",
     "forWhoDescription": ["Makijaż permamentny brwi polecany jest przede wszystkim paniom, które cenią swój czas i wygodę. Jeśli nie przepadasz za wykonywaniem żmudnego makijażu brwi lub poprostu nie masz na to czasu makijaż permamentny okaże się doskonałym wyborem. ",
-    "Oto niektóre przypadki, dla których to rozwiązanie będzie szczególnie korzystne:",
-    "Osoby o rzadkich, lub nierównomiernie rosnących brwiach",
-    "Osoby borykające się z utratą włosków w wyniku chorób, terapii",
-    "Osoby o jasnych brwiach, chcące uzyskać bardziej wyrazisty wygląd",
-    "Osoby aktywne fizycznie, które chcą uniknąć rozmywania się makijażu podczas ćwiczeń"
-  ],
-  "howToPrepare": "Zobacz jak przygotować się do zabiegu"
+      "Oto niektóre przypadki, dla których to rozwiązanie będzie szczególnie korzystne:",
+      "Osoby o rzadkich, lub nierównomiernie rosnących brwiach",
+      "Osoby borykające się z utratą włosków w wyniku chorób, terapii",
+      "Osoby o jasnych brwiach, chcące uzyskać bardziej wyrazisty wygląd",
+      "Osoby aktywne fizycznie, które chcą uniknąć rozmywania się makijażu podczas ćwiczeń"
+    ],
+    "howToPrepare": "Zobacz jak przygotować się do zabiegu"
+  },
+  "lips": {
+    "whatIsItTitle": ["Co to jest", "makijaż pernamentny ust"],
+    "whatIsItDescription": ["Chyba nie ma kobiety, która by nie chciała cieszyć się trwałym i idealnym makijażem ust bez konieczności używania szminki.",
+      "Makijaż pernamentny ust to zaawansowana metoda pigmentacji polegająca na wprowadzeniu odpowiednio dobranego pigmentu do czerwieni wargowej. Celem tej techniki jest podkreślenie naturalnego piękna ust jednocześnie zapewniając długotrwałe efekty.",
+      "Efekt utrzymuje się ok. 2 lata, natomiast jest to bardzo uzależnione od indywidualnych czynników, które wpływają na trwałość zabiegu."
+    ],
+    "forWhoTitle": "Zabieg Dedykowany jest dla...",
+    "forWhoDescription": ["Osób, które mają blade, słabo ukrwione usta, a także tych, których usta są wąskie i małe, o nieregularnym konturze wywołanym opryszczką lub zmianami potrądzikowymi.",
+      "Osób, które chcą zaoszczędzić czas, rezygnując z codziennego makijażu ust",
+      "Osób z bliznami, deformacjami, które pragną je zminimalizować",
+      "WSZYSTKICH, którzy pragną naturalnego a jednocześnie trwałego makijażu ust, który podkreśla urodę i wzmacnia pewność siebie"
+    ],
+    "yourVisitTitle": "Twoja wizyta w salonie",
+    "step": "KROK",
+    "yourVisitDescription": ["Przechodzimy wspólnie przez przeciwwskazania. Zachęcam, żebyś zabrała ze sobą ulubioną szminkę, będziemy rozmawiać o Twoich preferencjach, oczekiwaniach, które wspólnie spełnimy.",
+      "Nadanie kształtu ",
+      "Teraz zobaczysz wizualizację zmiany, rysunek wstępny makijażu pernamentnego ust. Na podstawie odmierzonych punktów Twojej twarzy, wyznaczam idealny dla Ciebie kształt. Zabieg wykonywany dopiero po twojej akceptacji rysunku. Dobieram optymalny kolor na podstawie twoich preferencji",
+      "Wykonuję kontur ust a następnie wypełnienie ich kolorem. Pigmentacja ust zajmuje 40-80min zależnie od rozmiaru."
+    ],
+    "howToPrepareTitle": "Jak przygotować sie do zabiegu",
+    "howToPrepareDescription": ["Stosować dobrą pielęgnację ust, aby były miękkie, elastyczne i nawilżone.",
+      "Unikać alkoholu i leków rozrzedzających krew na ok. 48h przed zabiegiem, aby zminimalizować ryzyko krwawienia i obrzęków",
+      "Zadbać o dobre nawodnienie",
+      "Unikać opalania na słońcu lub w solarium, aby uniknąć podrażnień skóry u przemieszczania pigmentu"
+    ]
   },
   "pricelist": {
     "brows": "brwi",
     "browsServices": ["makijaż permanentny brwi", "dopigmentowanie (do 3 miesiecy)", "dopigmentowanie po czasie"],
     "mouth": "usta",
     "mouthServices": ["makijaż permanentny ust", "dopigmentowanie (do 3 miesiecy)"],
-    "rest": ["henna pudrowa", "laminacja brwi z farbka", "lifting", "regulacja brwi (pęseta + ciepły wosk)"]
+    "browsStyle": "Stylizacja brwi",
+    "rest": ["henna pudrowa", "laminacja brwi z farbka", "lifting", "regulacja brwi (pęseta + ciepły wosk)"],
+    "desc":["Odswieżenie makijażu pernamentnego wykonanego w ", "Brows Story Anna Nasciuk do 1 roku"]
   }
 }

@@ -58,13 +58,39 @@
     ],
     "howToPrepare": "Sehen Sie, wie Sie sich auf die Behandlung vorbereiten"
   },
-
-
+  "lips": {
+    "whatIsItTitle": ["Was ist", "Permanentes Lippen-Make-up"],
+    "whatIsItDescription": ["Es gibt wohl keine Frau, die sich nicht ein lang anhaltendes und perfektes Lippen-Make-up wünschen würde, ohne dabei Lippenstift zu verwenden.",
+      "Das pernamentale Lippen-Make-up ist eine fortschrittliche Pigmentierungsmethode, bei der ein entsprechend ausgewähltes Pigment in die Rötung der Lippen eingebracht wird. Das Ziel dieser Technik ist es, die natürliche Schönheit der Lippen zu betonen und gleichzeitig ein lang anhaltendes Ergebnis zu erzielen. ",
+      "Die Wirkung hält etwa zwei Jahre lang an, ist aber stark von individuellen Faktoren abhängig, die die Dauerhaftigkeit der Behandlung beeinflussen."
+    ],
+    "forWhoTitle": "Die Behandlung richtet sich an...",
+    "forWhoDescription": ["Menschen, die blasse, schlecht durchblutete Lippen haben, und solche, deren Lippen schmal und klein sind, mit unregelmäßigen Konturen, verursacht durch Herpes- oder Akneläsionen.",
+      "Menschen, die Zeit sparen wollen, indem sie auf das tägliche Lippen-Make-up verzichten",
+      "Menschen mit Narben oder Deformierungen, die diese minimieren möchten",
+      "ALLE, die ein natürliches, aber dauerhaftes Lippen-Make-up wünschen, das ihre Schönheit unterstreicht und ihr Selbstvertrauen stärkt"
+    ],
+    "yourVisitTitle": "Ihr Besuch im Salon",
+    "step": "SCHRITT",
+    "yourVisitDescription": ["Wir gehen gemeinsam die Kontraindikationen durch. Ich empfehle Ihnen, Ihren Lieblingslippenstift mitzubringen, wir sprechen über Ihre Vorlieben und Erwartungen, die wir gemeinsam erfüllen werden.",
+    "Die Formgebung",  
+    "Sie sehen nun eine Visualisierung der Veränderung, eine Vorzeichnung des pernamentalen Lippen-Make-ups. Anhand der vermessenen Punkte Ihres Gesichts bestimme ich die ideale Form für Sie. Die Behandlung wird erst nach Ihrer Zustimmung zur Zeichnung durchgeführt. Ich wähle die optimale Farbe auf der Grundlage Ihrer Vorlieben. ",
+    "Ich konturiere die Lippen und fülle sie dann mit Farbe auf. Die Lippenpigmentierung dauert je nach Größe 40-80 Minuten."
+    ],
+    "howToPrepareTitle": "So bereiten Sie sich auf die Behandlung vor",
+    "howToPrepareDescription": ["Pflegen Sie Ihre Lippen gut, damit sie weich, geschmeidig und mit Feuchtigkeit versorgt bleiben.",
+      "Verzichten Sie etwa 48 Stunden vor dem Eingriff auf Alkohol und blutverdünnende Medikamente, um das Risiko von Blutungen und Schwellungen zu minimieren.",
+      "Achten Sie auf eine gute Flüssigkeitszufuhr",
+      "Vermeiden Sie Sonnenbäder oder Solarien, um Hautreizungen bei Pigmentverschiebungen zu vermeiden."
+    ]
+  },
   "pricelist": {
     "brows": "Augenbrauen",
-    "browsServices": ["Permanent Make-up für Augenbrauen", "Nachpigmentierung (bis zu 3 Monate)", "Nachpigmentierung nach längerer Zeit"],
+    "browsServices": ["Permanent Make-up für Augenbrauen", "Nachpigmentierung (bis zu 3 Monate)", "Nachpigmentierung"],
     "mouth": "Lippen",
-    "mouthServices": ["Permanent Make-up für Lippen", "Nachpigmentierung (bis zu 3 Monate)"],
-    "rest": ["Puder-Henna", "Augenbrauenlaminierung mit Farbe", "Wimpernlifting"]
+    "mouthServices": ["Permanentes Lippen-Make-up", "Nachpigmentierung (bis zu 3 Monate)"],
+    "browsStyle": "Augenbrauen-Styling",
+    "rest": ["Puder-Henna", "Augenbrauenlaminierung mit Farbe", "Wimpernlifting"],
+    "desc": ["Auffrischung des Permanent-Make-ups bei ", "Brows Story Anna Nasciuk bis zu 1 Jahr -50%."]
   }
 }

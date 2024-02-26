@@ -2,7 +2,11 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import styled from "styled-components";
-import { StyledImage, StyledTitle, StyledAnimatedTitle } from "../../assets/styles/styles";
+import {
+  StyledImage,
+  StyledTitle,
+  StyledAnimatedTitle,
+} from "../../assets/styles/styles";
 import { IGatsbyImageData } from "gatsby-plugin-image";
 import qm from "../../assets/icons/questionMark.png";
 import { CarouselGallery } from "../../components/Gallery/CarouselGallery";
@@ -63,8 +67,6 @@ const Step = styled.span`
 `;
 
 const IndexPage = () => {
-  const { t } = useTranslation();
-
   const data = useStaticQuery(graphql`
     {
       allFile(filter: { relativePath: { regex: "/services/lipsPage/" } }) {
@@ -94,50 +96,31 @@ const IndexPage = () => {
     return <div>Image not found</div>;
   }
 
+  const { t } = useTranslation();
+
   return (
     <>
       <Wrapper>
         <div>
           <StyledTitle imgSrc={qm}>
-            Co to jest <br />
-            makijaż pernamentny ust
+            {t("lips.whatIsItTitle.0")} <br />
+            {t("lips.whatIsItTitle.1")}
           </StyledTitle>
-          <p>
-            Chyba nie ma kobiety, która by nie chciała cieszyć się trwałym i
-            idealnym makijażem ust bez konieczności używania szminki.
-          </p>
-          <p>
-            Makijaż pernamentny ust to zaawansowana metoda pigmentacji
-            polegająca na wprowadzeniu odpowiednio dobranego pigmentu do
-            czerwieni wargowej. Celem tej techniki jest podkreślenie naturalnego
-            piękna ust jednocześnie zapewniając długotrwałe efekty.
-          </p>
-          <p>
-            Efekt utrzymuje się ok. 2 lata, natomiast jest to bardzo uzależnione
-            od indywidualnych czynników, które wpływają na trwałość zabiegu.
-          </p>
+          <p>{t("lips.whatIsItDescription.0")}</p>
+          <p>{t("lips.whatIsItDescription.1")}</p>
+          <p>{t("lips.whatIsItDescription.2")}</p>
         </div>
         <div style={{ alignItems: "center" }}>
           <StyledImage image={imageData} alt="Usta" />
         </div>
       </Wrapper>
       <Wrapper>
-        <StyledAnimatedTitle>Zabieg Dedykowany jest dla...</StyledAnimatedTitle>
+        <StyledAnimatedTitle>{t("lips.forWhoTitle")}</StyledAnimatedTitle>
         <StyledList>
-          <li>
-            Osób, które mają blade, słabo ukrwione usta, a także tych, których
-            usta są wąskie i małe, o nieregularnym konturze wywołanym opryszczką
-            lub zmianami potrądzikowymi.
-          </li>
-          <li>
-            Osób, które chcą zaoszczędzić czas, rezygnując z codziennego
-            makijażu ust
-          </li>
-          <li>Osób z bliznami, deformacjami, które pragną je zminimalizować</li>
-          <li>
-            WSZYSTKICH, którzy pragną naturalnego a jednocześnie trwałego
-            makijażu ust, który podkreśla urodę i wzmacnia pewność siebie
-          </li>
+          <li>{t("lips.forWhoDescription.0")}</li>
+          <li>{t("lips.forWhoDescription.1")}</li>
+          <li>{t("lips.forWhoDescription.2")}</li>
+          <li>{t("lips.forWhoDescription.3")}</li>
         </StyledList>
       </Wrapper>
       <Wrapper>
@@ -145,56 +128,37 @@ const IndexPage = () => {
           <StyledImage image={secondImageData} alt="Usta" />
         </div>
         <div>
-          <StyledTitle>Twoja wizyta w salonie</StyledTitle>
+          <StyledTitle>{t("lips.yourVisitTitle")}</StyledTitle>
           <Step>
-            <mark>KROK 1</mark>
+            <mark>{t("lips.step")} 1</mark>
+          </Step>
+          <p>{t("lips.yourVisitDescription.0")}</p>
+          <Step>
+            <mark>{t("lips.step")} 2</mark>
           </Step>
           <p>
-            Przechodzimy wspólnie przez przeciwwskazania. Zachęcam, żebyś
-            zabrała ze sobą ulubioną szminkę, będziemy rozmawiać o Twoich
-            preferencjach, oczekiwaniach, które wspólnie spełnimy.
+            {t("lips.yourVisitDescription.1")} <br />{" "}
+            {t("lips.yourVisitDescription.2")}
           </p>
           <Step>
-            <mark>KROK 2</mark>
+            <mark>{t("lips.step")} 3</mark>
           </Step>
-          <p>
-            Nadanie kształtu <br /> Teraz zobaczysz wizualizację zmiany, rysunek
-            wstępny makijażu pernamentnego ust. Na podstawie odmierzonych
-            punktów Twojej twarzy, wyznaczam idealny dla Ciebie kształt. Zabieg
-            wykonywany dopiero po twojej akceptacji rysunku. Dobieram optymalny
-            kolor na podstawie twoich preferencji
-          </p>
-          <Step>
-            <mark>KROK 3</mark>
-          </Step>
-          <p>
-            Wykonuję kontur ust a następnie wypełnienie ich kolorem. Pigmentacja
-            ust zajmuje 40-80min zależnie od rozmiaru.
-          </p>
+          <p>{t("lips.yourVisitDescription.3")}</p>
         </div>
       </Wrapper>
       <Wrapper>
-        <StyledTitle imgSrc={qm}>Jak przygotować sie do zabiegu</StyledTitle>
+        <StyledTitle imgSrc={qm}>{t("lips.howToPrepareTitle")}</StyledTitle>
         <StyledList>
-          <li>
-            Stosować dobrą pielęgnację ust, aby były miękkie, elastyczne i
-            nawilżone.
-          </li>
-          <li>
-            Unikać alkoholu i leków rozrzedzających krew na ok. 48h przed
-            zabiegiem, aby zminimalizować ryzyko krwawienia i obrzęków {" "}
-          </li>
-          <li>Zadbać o dobre nawodnienie</li>
-          <li>
-            Unikać opalania na słońcu lub w solarium, aby uniknąć podrażnień
-            skóry u przemieszczania pigmentu
-          </li>
+          <li>{t("lips.howToPrepareDescription.0")}</li>
+          <li>{t("lips.howToPrepareDescription.1")}</li>
+          <li>{t("lips.howToPrepareDescription.2")}</li>
+          <li>{t("lips.howToPrepareDescription.3")}</li>
         </StyledList>
       </Wrapper>
-      <StyledGalleryTitle>Zobacz realizacje</StyledGalleryTitle>
+      <StyledGalleryTitle>{t("realizations")}</StyledGalleryTitle>
       <CarouselGallery />
-      <Link to={'/contraindications'}>
-        <Button>ZOBACZ PRZECIWSKAZANIA</Button>
+      <Link to={"/contraindications"}>
+        <Button>{t("contraindications")}</Button>
       </Link>
     </>
   );
