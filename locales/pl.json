@@ -40,7 +40,7 @@
   "brows": {
     "whatIsItTitle": "Co to jest <br/> Makijaż permanentny brwi",
     "whatIsItDescription": ["Kształt brwi to jeden z najbardziej wyrazistych elementów twarzy. Ich odpowiednia stylizacja może subtelnie podkreślić wygląd twarzy oraz zatuszować naturalną asymetrię.",
-      "MAKIJAŻ PERMANENTNY BRWI - to specjalistyczny zabieg kosmetyczny, który pozwala uzyskać naturalne efekty poprawy kształtu, zagęszczenia i wyraźniejszego zarysowania brwi. Pigment wprowadzany jest na odpowiednią głębokość skury jednorazową igłą.",
+      "MAKIJAŻ PERMANENTNY BRWI - to specjalistyczny zabieg kosmetyczny, który pozwala uzyskać naturalne efekty poprawy kształtu, zagęszczenia i wyraźniejszego zarysowania brwi. Pigment wprowadzany jest na odpowiednią głębokość skóry jednorazową igłą.",
       "W odróżnieniu od starszych metod makijażu permamentnego, które oferowały trwałość na całe życie, ale często prowadziły do niekorzystnych odbarwień i braku możliwości zmiany kształtu, nowoczesny makijaż wykonywany w Brows Story, ma na celu uzyskanie jak najbardziej naturalnego efektu by podkreślić urodę klientki, odkryciu jej piękna i pewności siebie każdego dnia."
     ],
     "howLongTitle": "Jak długo utrzymuje się efekt zabiegu?",
@@ -49,7 +49,7 @@
       "W większości przypadków są to około 2 lata"
     ],
     "forWhoTitle": "Dla kogo jest makijaż permanentny",
-    "forWhoDescription": ["Makijaż permamentny brwi polecany jest przede wszystkim paniom, które cenią swój czas i wygodę. Jeśli nie przepadasz za wykonywaniem żmudnego makijażu brwi lub poprostu nie masz na to czasu makijaż permamentny okaże się doskonałym wyborem. ",
+    "forWhoDescription": ["Makijaż permanentny brwi polecany jest przede wszystkim paniom, które cenią swój czas i wygodę. Jeśli nie przepadasz za wykonywaniem żmudnego makijażu brwi lub poprostu nie masz na to czasu makijaż permamentny okaże się doskonałym wyborem. ",
       "Oto niektóre przypadki, dla których to rozwiązanie będzie szczególnie korzystne:",
       "Osoby o rzadkich, lub nierównomiernie rosnących brwiach",
       "Osoby borykające się z utratą włosków w wyniku chorób, terapii",
@@ -59,9 +59,9 @@
     "howToPrepare": "Zobacz jak przygotować się do zabiegu"
   },
   "lips": {
-    "whatIsItTitle": ["Co to jest", "makijaż pernamentny ust"],
+    "whatIsItTitle": ["Co to jest", "makijaż permanentny ust"],
     "whatIsItDescription": ["Chyba nie ma kobiety, która by nie chciała cieszyć się trwałym i idealnym makijażem ust bez konieczności używania szminki.",
-      "Makijaż pernamentny ust to zaawansowana metoda pigmentacji polegająca na wprowadzeniu odpowiednio dobranego pigmentu do czerwieni wargowej. Celem tej techniki jest podkreślenie naturalnego piękna ust jednocześnie zapewniając długotrwałe efekty.",
+      "Makijaż permanentny ust to zaawansowana metoda pigmentacji polegająca na wprowadzeniu odpowiednio dobranego pigmentu do czerwieni wargowej. Celem tej techniki jest podkreślenie naturalnego piękna ust jednocześnie zapewniając długotrwałe efekty.",
       "Efekt utrzymuje się ok. 2 lata, natomiast jest to bardzo uzależnione od indywidualnych czynników, które wpływają na trwałość zabiegu."
     ],
     "forWhoTitle": "Zabieg Dedykowany jest dla...",
@@ -90,7 +90,7 @@
     "mouth": "usta",
     "mouthServices": ["makijaż permanentny ust", "dopigmentowanie (do 3 miesiecy)"],
     "browsStyle": "Stylizacja brwi",
-    "rest": ["henna pudrowa", "laminacja brwi z farbka", "lifting", "regulacja brwi (pęseta + ciepły wosk)"],
+    "rest": ["henna pudrowa", "laminacja brwi z farbka", "lifting rzęs", "regulacja brwi (pęseta + ciepły wosk)"],
     "desc":["Odswieżenie makijażu pernamentnego wykonanego w ", "Brows Story Anna Nasciuk do 1 roku"]
   }
 }

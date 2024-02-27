@@ -49,7 +49,7 @@ const HamburgerMenu = styled.div`
   justify-content: center;
   background-color: white;
   z-index: 999;
-  animation: ${slideIn} .4s ease-in-out forwards;
+  animation: ${slideIn} 0.4s ease-in-out forwards;
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.dark};
@@ -60,7 +60,7 @@ const HamburgerMenu = styled.div`
 const Navbar: React.FC = () => {
   const { t } = useTranslation();
   const width = useWidth();
-  const [isMenuOpen, setIsMenuOpen] = useState(false); 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -92,9 +92,15 @@ const Navbar: React.FC = () => {
           <Link to="/" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <img src={miniLogo} alt="Logo" height="70" />
           </Link>
-          <NavItem to={"/#about"} onClick={() => setIsMenuOpen(!isMenuOpen)}>{t("menu.about")}</NavItem>
-          <NavItem to={"/services"} onClick={() => setIsMenuOpen(!isMenuOpen)}>{t("menu.services")}</NavItem>
-          <NavItem to={"/priceList"} onClick={() => setIsMenuOpen(!isMenuOpen)}>{t("menu.prices")}</NavItem>
+          <NavItem to={"/#about"} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {t("menu.about")}
+          </NavItem>
+          <NavItem to={"/services"} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {t("menu.services")}
+          </NavItem>
+          <NavItem to={"/priceList"} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {t("menu.prices")}
+          </NavItem>
           <LanguageSwitcher />
         </HamburgerMenu>
       )}
