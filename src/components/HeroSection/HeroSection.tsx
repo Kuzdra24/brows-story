@@ -74,9 +74,10 @@ const HeroSection: React.FC = () => {
         <p>
           <Trans i18nKey="subtitle" />
         </p>
-        <Link to="/services">
-          <Button>{t("buttonAction")}</Button>
-        </Link>
+
+        <Button style={{width: "90%"}}>
+          <Link to="/services">{t("buttonAction")}</Link>{" "}
+        </Button>
       </div>
     </MobileWrapper>
   );
