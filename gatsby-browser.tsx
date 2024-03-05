@@ -7,12 +7,6 @@ import { ThemeProvider } from "styled-components";
 import Layout from "./src/Layout";
 
 export const wrapPageElement = ({ element }) => {
-  exports.onInitialClientRender = () => {
-    const alreadySet = window.localStorage.getItem("i18nextLng");
-    if (!alreadySet) {
-      window.localStorage.setItem("i18nextLng", "pl");
-    }
-  };
   return (
     <I18nextProvider i18n={i18n}>
       <ThemeProvider theme={theme}>
