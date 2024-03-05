@@ -18,7 +18,7 @@
     "Gemeinsam vereinbaren wir einen passenden Termin und beantworten alle Ihre Fragen."
   ],
   "more": "MEHR",
-  "realizations": "Siehe Referenzen",
+  "realizations": "GALERIE",
   "download": "HERUNTERLADEN",
   "contraindications": "Kontraindikationen",
   "services": {
@@ -90,7 +90,7 @@
     "mouth": "Lippen",
     "mouthServices": ["Permanentes Lippen-Make-up", "Nachpigmentierung (bis zu 3 Monate)"],
     "browsStyle": "Augenbrauen-Styling",
-    "rest": ["Puder-Henna", "Augenbrauenlaminierung mit Farbe", "Wimpernlifting"],
+    "rest": ["Puder-Henna", "Augenbrauenlaminierung mit Farbe", "Wimpernlifting", "Augenbrauenkorrektur (Pinzette + Warmwachs)"],
     "desc": ["Auffrischung des Permanent-Make-ups bei ", "Brows Story Anna Nasciuk bis zu 1 Jahr -50%."]
   }
 }

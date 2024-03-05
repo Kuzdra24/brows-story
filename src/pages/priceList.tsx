@@ -83,7 +83,7 @@ export default function PriceList() {
 
   return (
     <Wrapper>
-      <StyledTitle imgSrc={dolarIcon}>Cennik</StyledTitle>
+      <StyledTitle imgSrc={dolarIcon}>{t("menu.prices")}</StyledTitle>
       <section>
         <StyledSubtitle>{t("pricelist.brows")}</StyledSubtitle>
         <ul>
@@ -110,10 +110,9 @@ export default function PriceList() {
         <hr />
         <MenuItem style={{ margin: "20px 0 40px" }}>
           <span>
-            {t("pricelist.desc.0")} <br />
+            {t("pricelist.desc.0")} 
             {t("pricelist.desc.1")}
           </span>
-          <strong> -50%</strong>
         </MenuItem>
         <StyledSubtitle>{t("pricelist.browsStyle")}</StyledSubtitle>
         <ul>

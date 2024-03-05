@@ -118,12 +118,12 @@ const IndexPage: React.FC = () => {
         <ServiceCard
           name={t("services.brows")}
           backgroundImage={eyeBrowsSrc}
-          slug="/services/eyebrows"
+          slug="/eyebrows"
         />
         <ServiceCard
           name={t("services.lips")}
           backgroundImage={mouthSrc}
-          slug="/services/mouth"
+          slug="/mouth"
         />
       </Wrapper>
       <SectionWrapper>

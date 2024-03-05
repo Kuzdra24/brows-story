@@ -13,7 +13,10 @@ i18n.use(initReactI18next).init({
     },
   },
   lng: "pl",
-  fallbackLng: "pl",
+  detection: {
+    order: ["localStorage", "navigator"],
+  },
+  fallbackLng: "de",
   interpolation: {
     escapeValue: false,
   },
