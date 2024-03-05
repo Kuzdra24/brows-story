@@ -110,7 +110,7 @@ export default function PriceList() {
         <hr />
         <MenuItem style={{ margin: "20px 0 40px" }}>
           <span>
-            {t("pricelist.desc.0")} 
+            {t("pricelist.desc.0")}
             {t("pricelist.desc.1")}
           </span>
         </MenuItem>

@@ -6,11 +6,18 @@ import theme from "./src/assets/styles/theme";
 import { ThemeProvider } from "styled-components";
 import Layout from "./src/Layout";
 
-export const wrapPageElement = ({ element }) => (
-  <I18nextProvider i18n={i18n}>
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Layout>{element}</Layout>
-    </ThemeProvider>
-  </I18nextProvider>
-);
+export const wrapPageElement = ({ element }) => {
+  const alreadySet = localStorage.getItem("i18nextLng");
+
+  if (!alreadySet) {
+    window.localStorage.setItem('i18nextLng', 'pl');
+  }
+  return (
+    <I18nextProvider i18n={i18n}>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Layout pageTitle="Brows Story">{element}</Layout>
+      </ThemeProvider>
+    </I18nextProvider>
+  );
+};
