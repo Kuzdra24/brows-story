@@ -1,18 +1,18 @@
-import * as React from "react";
-import { useTranslation } from "react-i18next";
-import { Trans } from "react-i18next";
+import React, {useEffect} from "react";
+import { useTranslation, Trans } from "react-i18next";
+
 import styled from "styled-components";
-import qm from "../../assets/icons/questionMark.png";
-import clock from "../../assets/icons/clock.png";
-import eye from "../../assets/icons/eye.png";
+import qm from "../assets/icons/questionMark.png";
+import clock from "../assets/icons/clock.png";
+import eye from "../assets/icons/eye.png";
 import { graphql, useStaticQuery, Link } from "gatsby";
 import { IGatsbyImageData } from "gatsby-plugin-image";
-import { StyledImage, StyledTitle } from "../../assets/styles/styles";
-import { Button } from "../../components/UI/Button";
-import useWidth from "../../hooks/useWidth";
-import downloadLink from "../../assets/download/how2Prepare.jpg";
-import { EyeBrowsGallery } from "../../components/Gallery/EyeBrowsGallery";
-import { StyledGalleryTitle } from "./index";
+import { StyledImage, StyledTitle } from "../assets/styles/styles";
+import { Button } from "../components/UI/Button";
+import useWidth from "../hooks/useWidth";
+import downloadLink from "../assets/download/how2Prepare.jpg";
+import { EyeBrowsGallery } from "../components/Gallery/EyeBrowsGallery";
+import { StyledGalleryTitle } from "./services/index";
 
 const Wrapper = styled.section`
   display: flex;
@@ -82,7 +82,15 @@ const ColWrapper = styled.section`
   align-items: center;
 `;
 const IndexPage = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const savedLanguage = window.localStorage.getItem("i18nextLng");
+    if (savedLanguage && savedLanguage !== i18n.language) {
+      i18n.changeLanguage(savedLanguage);
+    }
+  }, []);
+
   const data = useStaticQuery(graphql`
     {
       allFile(filter: { relativePath: { regex: "/services/eyebrowsPage/" } }) {
@@ -160,9 +168,7 @@ const IndexPage = () => {
         </div>
       </Wrapper>
       <ColWrapper>
-        <StyledTitle imgSrc={qm}>
-          {t("brows.howToPrepare")}
-        </StyledTitle>
+        <StyledTitle imgSrc={qm}>{t("brows.howToPrepare")}</StyledTitle>
         <a
           href={downloadLink}
           style={{ width: "100%", display: "flex", justifyContent: "center" }}

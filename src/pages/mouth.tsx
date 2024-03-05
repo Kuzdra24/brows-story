@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import styled from "styled-components";
@@ -6,12 +6,12 @@ import {
   StyledImage,
   StyledTitle,
   StyledAnimatedTitle,
-} from "../../assets/styles/styles";
+} from "../assets/styles/styles";
 import { IGatsbyImageData } from "gatsby-plugin-image";
-import qm from "../../assets/icons/questionMark.png";
-import { CarouselGallery } from "../../components/Gallery/CarouselGallery";
-import { StyledGalleryTitle } from "./index";
-import { Button } from "../../components/UI/Button";
+import qm from "../assets/icons/questionMark.png";
+import { CarouselGallery } from "../components/Gallery/CarouselGallery";
+import { StyledGalleryTitle } from "./services/index";
+import { Button } from "../components/UI/Button";
 
 const Wrapper = styled.section`
   display: flex;
@@ -67,6 +67,13 @@ const Step = styled.span`
 `;
 
 const IndexPage = () => {
+  const { t, i18n } = useTranslation();
+  useEffect(() => {
+    const savedLanguage = window.localStorage.getItem("i18nextLng");
+    if (savedLanguage && savedLanguage !== i18n.language) {
+      i18n.changeLanguage(savedLanguage);
+    }
+  }, []);
   const data = useStaticQuery(graphql`
     {
       allFile(filter: { relativePath: { regex: "/services/lipsPage/" } }) {
@@ -95,8 +102,6 @@ const IndexPage = () => {
   if (!secondImageData) {
     return <div>Image not found</div>;
   }
-
-  const { t } = useTranslation();
 
   return (
     <>
