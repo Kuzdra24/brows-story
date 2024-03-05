@@ -5,7 +5,10 @@ import { AboutSecction } from "../components/About/About";
 import { Contact } from "../components/Contact/Contact";
 
 const IndexPage = () => {
-  const { t } = useTranslation();
+  const alreadySet = window.localStorage.getItem("i18nextLng");
+  if (!alreadySet) {
+    window.localStorage.setItem("i18nextLng", "pl");
+  }
   return (
     <>
       <HeroSection />
