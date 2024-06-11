@@ -21,8 +21,6 @@ interface ImageNode {
   };
 }
 
-
-
 const ImageWrapper = styled.div`
   height: 250px;
   margin: 6px;
@@ -91,16 +89,38 @@ export const EyeBrowsGallery = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState<any>();
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
   const { scrollRef, prev, next } = useSnapCarousel();
+
+  const handleNextImage = () => {
+    const nextIndex = (currentImageIndex + 1) % imageList.length;
+    const nextImageData = getImage(imageList[nextIndex].node.childImageSharp);
+    if (nextImageData) {
+      setCurrentImage(nextImageData);
+      setCurrentImageIndex(nextIndex);
+    }
+  };
+
+  const handlePrevImage = () => {
+    const prevIndex =
+      (currentImageIndex - 1 + imageList.length) % imageList.length;
+    const prevImageData = getImage(imageList[prevIndex].node.childImageSharp);
+    if (prevImageData) {
+      setCurrentImage(prevImageData);
+      setCurrentImageIndex(prevIndex);
+    }
+  };
 
   const imageList: ImageNode[] = data.allFile.edges;
   return (
     <>
       <GalleryWrapper>
-        <GalleryButton onClick={(): void => prev()} style={{ left: "0" }}>
-          {"<"}
-        </GalleryButton>
+        {!isOpen && (
+          <GalleryButton onClick={(): void => prev()} style={{ left: "0" }}>
+            {"<"}
+          </GalleryButton>
+        )}
         <ul
           ref={scrollRef}
           style={{
@@ -108,7 +128,6 @@ export const EyeBrowsGallery = () => {
             overflow: "auto",
             scrollSnapType: "x mandatory",
             overflowX: "hidden",
-           
           }}
         >
           {imageList.map((image, index) => {
@@ -130,20 +149,38 @@ export const EyeBrowsGallery = () => {
             );
           })}
         </ul>
-        <GalleryButton onClick={(): void => next()} style={{ right: "0" }}>
-          {">"}
-        </GalleryButton>
+        {!isOpen && (
+          <GalleryButton onClick={(): void => next()} style={{ left: "0" }}>
+            {">"}
+          </GalleryButton>
+        )}
       </GalleryWrapper>
 
-      {isOpen && (
-        <Image onClick={() => {setIsOpen(false)}}>
-          {currentImage && (
-            <GatsbyImage
-              style={{ width: "350px" }}
-              image={currentImage}
-              alt="imf"
-            />
-          )}
+      {isOpen && currentImage && (
+        <Image onClick={() => setIsOpen(false)}>
+          <GalleryButton
+            onClick={(e) => {
+              e.stopPropagation();
+              handlePrevImage();
+            }}
+            style={{ left: "0" }}
+          >
+            {"<"}
+          </GalleryButton>
+          <GatsbyImage
+            style={{ width: "350px" }}
+            image={currentImage}
+            alt="img"
+          />
+          <GalleryButton
+            onClick={(e) => {
+              e.stopPropagation();
+              handleNextImage();
+            }}
+            style={{ right: "0" }}
+          >
+            {">"}
+          </GalleryButton>
         </Image>
       )}
     </>

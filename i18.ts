@@ -12,11 +12,11 @@ i18n.use(initReactI18next).init({
       translation: plTranslation,
     },
   },
-  lng: "pl",
+  lng: "de",
   detection: {
     order: ["localStorage", "navigator"],
   },
-  fallbackLng: "de",
+  fallbackLng: "pl",
   interpolation: {
     escapeValue: false,
   },
