@@ -7,7 +7,7 @@ const IndexPage = () => {
   useEffect(() => {
     const alreadySet = window.localStorage.getItem("i18nextLng");
     if (!alreadySet) {
-      window.localStorage.setItem("i18nextLng", "pl");
+      window.localStorage.setItem("i18nextLng", "de");
     }
   }, [])
   return (
